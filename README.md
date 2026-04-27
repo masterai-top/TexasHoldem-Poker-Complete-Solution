@@ -99,8 +99,30 @@
 ## 🎮 Demo | 演示 | 演示
 
 See real gameplay below 👇  
-查看游戏实际画面 👇  
-查看實際遊戲畫面 👇 
+## 📸 游戏截图 / Screenshots
+
+![管理俱乐部币](Screenshots/1管理俱乐部币 - 副本.jpg)  
+**管理俱乐部币界面**
+
+![联盟加入主页](Screenshots/3联盟-加入主页.jpg)  
+**联盟加入主页**
+
+![房间 2-6人桌](Screenshots/4房间2-6人桌.jpg)  
+**2-6人房间对战界面**
+
+![MTT报名](Screenshots/MTT-报名（门票）.jpg)  
+**MTT 锦标赛报名（门票）界面**
+
+![游戏截图1](Screenshots/微信图片_20241029191835.jpg)  
+**游戏界面截图**
+
+![游戏截图2](Screenshots/微信图片_20241029191842.jpg)  
+**游戏界面截图**
+
+![游戏截图3](Screenshots/微信图片_20241031110753.jpg)  
+**游戏界面截图**
+
+
 ![01](https://github.com/user-attachments/assets/a5fbbbae-369b-430f-8a6b-8d40a0037e0d)
 ![1管理俱乐部币 - 副本](https://github.com/user-attachments/assets/e64d9a16-cd29-4a9d-95ff-68d7926f3484)
 ![1管理](https://github.com/user-attachments/assets/8258700e-5441-41f2-818f-21cb18c1508d)
