@@ -99,40 +99,31 @@
 ## 🎮 Demo | 演示 | 演示
 
 See real gameplay below 👇  
-## 📸 游戏截图 / Screenshots
-
 ## 📸 游戏真实截图 / Screenshots
 
-![管理俱乐部币](Screenshots/1管理俱乐部币%20-%20副本.jpg)  
-**俱乐部币管理界面**
-
 ![创建俱乐部](Screenshots/创建俱乐部.jpg)  
-**创建俱乐部界面**
+**创建俱乐部界面 | Create Club**
+
+![申请加入俱乐部](Screenshots/申请加入俱乐部.jpg)  
+**申请加入俱乐部 | Join Club**
+
+![俱乐部币](Screenshots/俱乐部币.jpg)  
+**俱乐部币管理界面 | Club Coin Management**
+
+![加入联盟](Screenshots/加入联盟.jpg)  
+**加入联盟界面 | Join Alliance**
 
 ![好友局](Screenshots/好友局.jpg)  
-**好友局房间**
+**好友局房间 | Friends Room**
 
-![2-6人房间对战](Screenshots/4房间2-6人桌.jpg)  
-**2-6人实时对战界面**
+![打牌房间](Screenshots/打牌房间.jpg)  
+**实时打牌房间（2-6人） | Gameplay Room**
 
-![联盟加入主页](Screenshots/3联盟-加入主页.jpg)  
-**联盟加入主页**
-
-![MTT报名](Screenshots/MTT-报名（门票）.jpg)  
-**MTT锦标赛报名（门票）界面**
+![MTT赛事](Screenshots/MTT赛事.jpg)  
+**MTT锦标赛赛事界面 | MTT Tournament**
 
 ![个人中心](Screenshots/个人中心.jpg)  
-**个人中心界面**
-
-![游戏界面1](Screenshots/微信图片_20241029191835.jpg)  
-**实时游戏界面**
-
-![游戏界面2](Screenshots/微信图片_20241029191842.jpg)  
-**实时游戏界面**
-
-![游戏界面3](Screenshots/微信图片_20241031110753.jpg)  
-**实时游戏界面**
-
+**个人中心界面 | Personal Center**
 
 ---
 
