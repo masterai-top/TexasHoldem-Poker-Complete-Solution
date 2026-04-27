@@ -107,8 +107,6 @@ See real gameplay below 👇
 ![联盟加入主页](Screenshots/3联盟-加入主页.jpg)  
 **联盟加入主页**
 
-![房间 2-6人桌](Screenshots/4房间2-6人桌.jpg)  
-**2-6人房间对战界面**
 
 ![MTT报名](Screenshots/MTT-报名（门票）.jpg)  
 **MTT 锦标赛报名（门票）界面**
@@ -123,15 +121,7 @@ See real gameplay below 👇
 **游戏界面截图**
 
 
-![01](https://github.com/user-attachments/assets/a5fbbbae-369b-430f-8a6b-8d40a0037e0d)
-![1管理俱乐部币 - 副本](https://github.com/user-attachments/assets/e64d9a16-cd29-4a9d-95ff-68d7926f3484)
-![1管理](https://github.com/user-attachments/assets/8258700e-5441-41f2-818f-21cb18c1508d)
-![1管理 - 副本](https://github.com/user-attachments/assets/b8eb75a3-b9af-4855-b810-15cb06dce8f2)
-![1房间列表](https://github.com/user-attachments/assets/67b69273-df09-4a63-b464-7451f1280aad)
 
-![4房间2-6人桌](https://github.com/user-attachments/assets/34ea9b1a-09bd-4424-b50b-a04000c14254)
-![05牌桌-查看头像1](https://github.com/user-attachments/assets/8673b6d6-7579-4d66-b60e-a29556ade3b6)
-![4房间2-9人桌](https://github.com/user-attachments/assets/b4fa375c-2de7-4d26-90e1-6e045900657d)
 ---
 
 ⭐ 如果觉得项目有价值，请Star支持一下～
