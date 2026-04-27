@@ -1,6 +1,7 @@
-# 🃏 德州扑克完整运营级源码 | Texas Hold'em Poker Complete Source Code|德州扑克源码 | 德州撲克源碼  
-
-> **线上稳定运营多年 | 俱乐部+联盟+私人局 | 10+种玩法 | 刚停服，全套源码可售**
+# 🃏 德州扑克完整运营级源码 | Texas Hold'em Poker Complete Source Code|德州扑克源码 | 德州撲克源碼 | Texas Hold'em Poker Complete Solution 
+**德州扑克源码** · **德州扑克完整解决方案** · **德州源码** · **德州扑克游戏源码**  
+**Multiplayer Online Poker | Club + Agent System | Unity + C++ | Demo Available**
+> **线上稳定运营多年 | 俱乐部+联盟+私人局 | 10+种玩法 | 刚停服，全套源码**
 💡 Build your own poker platform in minutes  
 💡 快速搭建属于你的德州扑克平台  
 💡 快速建立自己的德州撲克系統  
