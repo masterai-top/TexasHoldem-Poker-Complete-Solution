@@ -95,7 +95,12 @@
 📧 **Email：masterai918@gmail.com**
 
 👉 **联系我获取演示视频 + 详细报价**
+## 🎥 产品演示视频 / Product Demo Video
 
+[![德州扑克完整功能演示](https://img.youtube.com/vi/adHRqfHmj0Q/maxresdefault.jpg)](https://youtube.com/shorts/adHRqfHmj0Q)
+
+**点击上方图片观看视频演示**  
+德州扑克完整功能演示 | 金币大厅 + 俱乐部系统 + MTT锦标赛 + 短牌玩法
 ## 🎮 Demo | 演示 | 演示
 
 See real gameplay below 👇  
