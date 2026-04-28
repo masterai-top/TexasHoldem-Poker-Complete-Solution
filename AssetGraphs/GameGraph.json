@@ -1,0 +1,2809 @@
+﻿{
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "GameGraph",
+        "m_EditorClassIdentifier": "",
+        "m_allNodes": [
+            {
+                "m_name": "Split By Filter",
+                "m_id": "b303e531-63f2-4d74-8ff4-d27c035d4d95",
+                "m_x": 252.0,
+                "m_y": 0.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUlpTENKdFgyWnBiSFJsY2t0bGVYUjVjR1VpT2lKQmJua2lMQ0p0WDNabGNuTnBiMjRpT2pGOSJ9LCJtX3BvaW50SWQiOiJlY2IxNTRiMC05ZDY0LTRiNTktYmQ0Yy03NzhmOGUxYzMxMWMifV19"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "f626de45-6a65-4180-a340-8d1cb8abcefe",
+                        "label": "-",
+                        "parentId": "b303e531-63f2-4d74-8ff4-d27c035d4d95",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "ecb154b0-9d64-4b59-bd4c-778f8e1c311c",
+                        "label": "",
+                        "parentId": "b303e531-63f2-4d74-8ff4-d27c035d4d95",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "25b8fef4-465e-4867-9f78-5ffdc3a3a7aa",
+                "m_x": 492.0,
+                "m_y": -12.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoibHVhX3NjcmlwdHMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "c4d330d2-978b-490f-986e-e81e26499f1b",
+                        "label": "-",
+                        "parentId": "25b8fef4-465e-4867-9f78-5ffdc3a3a7aa",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "5e23f1f8-79f8-4fe3-838e-aeadb082a88f",
+                        "label": "+",
+                        "parentId": "25b8fef4-465e-4867-9f78-5ffdc3a3a7aa",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Build Asset Bundles",
+                "m_id": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_x": 1308.0,
+                "m_y": 1668.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleBuilder, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2VuYWJsZWRCdW5kbGVPcHRpb25zIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOjB9XX0sIm1fb3V0cHV0RGlyIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJFeHBvcnQve1BsYXRmb3JtfSJ9XX0sIm1fb3V0cHV0T3B0aW9uIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOjJ9XX0sIm1fbWFuaWZlc3ROYW1lIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiIifV19LCJtX292ZXJ3cml0ZUltcG9ydGVyU2V0dGluZyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                        "label": "-",
+                        "parentId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "714ac1a1-690b-4c8b-b3e1-08e0d767cf1a",
+                        "label": "+",
+                        "parentId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 153.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "LuaScripts",
+                "m_id": "cb5adbc2-cdc5-411d-8690-2709f65c22a4",
+                "m_x": 72.0,
+                "m_y": 0.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJTY3JpcHRzL0x1YVNjcmlwdHMifV19LCJtX2xvYWRQYXRoR3VpZCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiNjM3MmMxODMwMWMyMjg2NDVhZDJjMDRmMmYyMDk2ZWUifV19LCJtX2lnbm9yZVBhdHRlcm5zIjpbXSwibV9yZXNwb25kVG9Bc3NldENoYW5nZSI6ZmFsc2V9"
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "d593f0dc-7285-4098-9c4c-23597da0beac",
+                        "label": "+",
+                        "parentId": "cb5adbc2-cdc5-411d-8690-2709f65c22a4",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Mirror Directory",
+                "m_id": "d2687bd7-6b9f-4056-8682-09082ee183b5",
+                "m_x": 1764.0,
+                "m_y": 1668.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.MirrorDirectory, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX3NyY1BhdGgiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6IkV4cG9ydC9XaW5kb3dzIn0seyJ0YXJnZXRHcm91cCI6NCwidmFsdWUiOiJFeHBvcnQvaU9TIn0seyJ0YXJnZXRHcm91cCI6NywidmFsdWUiOiJFeHBvcnQvQW5kcm9pZCJ9XX0sIm1fZHN0UGF0aCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiQXNzZXRzL1N0cmVhbWluZ0Fzc2V0cyJ9LHsidGFyZ2V0R3JvdXAiOjQsInZhbHVlIjoiQXNzZXRzL1N0cmVhbWluZ0Fzc2V0cyJ9LHsidGFyZ2V0R3JvdXAiOjcsInZhbHVlIjoiQXNzZXRzL1N0cmVhbWluZ0Fzc2V0cyJ9XX0sIm1fbWlycm9yT3B0aW9uIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOjF9LHsidGFyZ2V0R3JvdXAiOjcsInZhbHVlIjoxfSx7InRhcmdldEdyb3VwIjo0LCJ2YWx1ZSI6MX1dfX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "75f93345-faa8-4f8a-955f-f705b07d8701",
+                        "label": "-",
+                        "parentId": "d2687bd7-6b9f-4056-8682-09082ee183b5",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "c7878fa9-45a3-4ad2-b807-b6fb64bbe64d",
+                        "label": "+",
+                        "parentId": "d2687bd7-6b9f-4056-8682-09082ee183b5",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 131.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "AppendExtNode",
+                "m_id": "e18fbbe7-9af0-435e-a600-b00985377d02",
+                "m_x": 1584.0,
+                "m_y": 1608.0,
+                "m_nodeInstance": {
+                    "m_className": "AppendExtNode, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX215VmFsdWUiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6Ii51bml0eTNkIn1dfSwibV9vdXRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJFeHBvcnQve1BsYXRmb3JtfSJ9LHsidGFyZ2V0R3JvdXAiOjcsInZhbHVlIjoiRXhwb3J0L3tQbGF0Zm9ybX0ifV19fQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "bad33695-6cdc-4390-a2fb-85ca5e2b1ed9",
+                        "label": "-",
+                        "parentId": "e18fbbe7-9af0-435e-a600-b00985377d02",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "4396128f-7539-41a7-90e0-03d7f52ce850",
+                        "label": "+",
+                        "parentId": "e18fbbe7-9af0-435e-a600-b00985377d02",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 133.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Proto",
+                "m_id": "80a934ae-ed40-4446-8ad6-15e8a576fb79",
+                "m_x": 60.0,
+                "m_y": 96.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJQcm90byJ9XX0sIm1fbG9hZFBhdGhHdWlkIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJkYmRmM2RiNjljOTlhZTM0N2IxYmYzZmRjODk1Y2Q3OSJ9XX0sIm1faWdub3JlUGF0dGVybnMiOltdLCJtX3Jlc3BvbmRUb0Fzc2V0Q2hhbmdlIjpmYWxzZX0="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "6f533802-8d06-4184-9bd4-796257d406a5",
+                        "label": "+",
+                        "parentId": "80a934ae-ed40-4446-8ad6-15e8a576fb79",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "ff038351-73e7-4a7f-92b5-b7da2a62556d",
+                "m_x": 240.0,
+                "m_y": 84.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUlpTENKdFgyWnBiSFJsY2t0bGVYUjVjR1VpT2lKQmJua2lMQ0p0WDNabGNuTnBiMjRpT2pGOSJ9LCJtX3BvaW50SWQiOiI0NWMzNDhhZi01NzE5LTQ4OTItYjFhMS01ZDkyNjk0Y2I0ODYifV19"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "baf5f903-9ebc-4c7a-8e77-f6c640a1618a",
+                        "label": "-",
+                        "parentId": "ff038351-73e7-4a7f-92b5-b7da2a62556d",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "45c348af-5719-4892-b1a1-5d92694cb486",
+                        "label": "",
+                        "parentId": "ff038351-73e7-4a7f-92b5-b7da2a62556d",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "7f30b3b4-6a9a-46f2-8a08-f429355f65cd",
+                "m_x": 480.0,
+                "m_y": 72.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoicHJvdG8udW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "330cb968-aa67-4f33-89aa-33a50359b273",
+                        "label": "-",
+                        "parentId": "7f30b3b4-6a9a-46f2-8a08-f429355f65cd",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "72117aba-c09c-48a0-b84d-d08bf9588100",
+                        "label": "+",
+                        "parentId": "7f30b3b4-6a9a-46f2-8a08-f429355f65cd",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "GamePlay",
+                "m_id": "42c6371d-d418-4a6f-b795-04f3d93fb940",
+                "m_x": 24.0,
+                "m_y": 420.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0dhbWVQbGF5In1dfSwibV9sb2FkUGF0aEd1aWQiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6IjFiYjVjNDAyODE3ZGEzZTRjOWViMWNkMDNkMzVjZTRkIn1dfSwibV9pZ25vcmVQYXR0ZXJucyI6W10sIm1fcmVzcG9uZFRvQXNzZXRDaGFuZ2UiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "3dd43768-d530-4add-8fef-6553526110ee",
+                        "label": "+",
+                        "parentId": "42c6371d-d418-4a6f-b795-04f3d93fb940",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                "m_x": 216.0,
+                "m_y": 396.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpVWlhoMGRYSmxMMVZKSWl3aWJWOW1hV3gwWlhKTFpYbDBlWEJsSWpvaVFXNTVJaXdpYlY5MlpYSnphVzl1SWpveGZRPT0ifSwibV9wb2ludElkIjoiZDdiYWJjNzMtMTA5ZC00MTg3LTgyZTMtNzA4N2VmZGMyYTViIn0seyJtX2luc3RhbmNlIjp7Im1fY2xhc3NOYW1lIjoiVW5pdHlFbmdpbmUuQXNzZXRHcmFwaC5GaWx0ZXJCeU5hbWVBbmRUeXBlLCBBc3NlbWJseS1DU2hhcnAtRWRpdG9yLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbCIsIm1faW5zdGFuY2VEYXRhIjoiQjY0fGV5SnRYMlpwYkhSbGNrdGxlWGR2Y21RaU9pSlFjbVZtWVdKeklpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lRVzU1SWl3aWJWOTJaWEp6YVc5dUlqb3hmUT09In0sIm1fcG9pbnRJZCI6IjRlMGMwNTUwLTMyNzctNGZlMy1iMGRiLTc3ZjAwYzQyM2ZmYiJ9LHsibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpVWlhoMGRYSmxMMEpISWl3aWJWOW1hV3gwWlhKTFpYbDBlWEJsSWpvaVFXNTVJaXdpYlY5MlpYSnphVzl1SWpveGZRPT0ifSwibV9wb2ludElkIjoiMDBkOWRjYTItMDRjZC00YzExLWFjN2ItNzM5Yjc3NzQ4NGNjIn0seyJtX2luc3RhbmNlIjp7Im1fY2xhc3NOYW1lIjoiVW5pdHlFbmdpbmUuQXNzZXRHcmFwaC5GaWx0ZXJCeU5hbWVBbmRUeXBlLCBBc3NlbWJseS1DU2hhcnAtRWRpdG9yLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbCIsIm1faW5zdGFuY2VEYXRhIjoiQjY0fGV5SnRYMlpwYkhSbGNrdGxlWGR2Y21RaU9pSkdiMjUwY3lJc0ltMWZabWxzZEdWeVMyVjVkSGx3WlNJNklrRnVlU0lzSW0xZmRtVnljMmx2YmlJNk1YMD0ifSwibV9wb2ludElkIjoiODgyMzdhOTUtNDIyZS00ODM0LWEzMzQtOWYzZmMzY2ZkYzM4In1dfQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "3462185b-d364-46b0-add8-020ed980c515",
+                        "label": "-",
+                        "parentId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "d7babc73-109d-4187-82e3-7087efdc2a5b",
+                        "label": "Texture/UI",
+                        "parentId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "4e0c0550-3277-4fe3-b0db-77f00c423ffb",
+                        "label": "Prefabs",
+                        "parentId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 65.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "00d9dca2-04cd-4c11-ac7b-739b777484cc",
+                        "label": "Texture/BG",
+                        "parentId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 97.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "88237a95-422e-4834-a334-9f3fc3cfdc38",
+                        "label": "Fonts",
+                        "parentId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 129.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "452cf580-0a42-4182-a571-fd4f08d325b6",
+                "m_x": 468.0,
+                "m_y": 348.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZ2FtZXBsYXlfYXRsYXMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "d6a751d5-3897-4785-9a8f-081725bea982",
+                        "label": "-",
+                        "parentId": "452cf580-0a42-4182-a571-fd4f08d325b6",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "4bc2e3fd-90d6-4809-958f-32c768a69aae",
+                        "label": "+",
+                        "parentId": "452cf580-0a42-4182-a571-fd4f08d325b6",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "7c5b450d-a87d-4b90-bda7-ca9651dae031",
+                "m_x": 468.0,
+                "m_y": 408.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZ2FtZXBsYXlfcHJlZmFicy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "0c0b9ac6-2627-49e9-8945-0b454533ceb2",
+                        "label": "-",
+                        "parentId": "7c5b450d-a87d-4b90-bda7-ca9651dae031",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "54938c76-9c8c-488d-ba9d-9008aab7048d",
+                        "label": "+",
+                        "parentId": "7c5b450d-a87d-4b90-bda7-ca9651dae031",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Fonts",
+                "m_id": "893fd62f-1505-466f-a76d-6659b5696a00",
+                "m_x": 48.0,
+                "m_y": 288.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0ZvbnRzIn1dfSwibV9sb2FkUGF0aEd1aWQiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6IjlhNDhiMWEzZDc4NDE4ZDQ1ODFiOWFhYjdhOWJjMzk0In1dfSwibV9pZ25vcmVQYXR0ZXJucyI6W10sIm1fcmVzcG9uZFRvQXNzZXRDaGFuZ2UiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "32cfefdb-765b-4afe-b732-4a358bb9b53b",
+                        "label": "+",
+                        "parentId": "893fd62f-1505-466f-a76d-6659b5696a00",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "1dd639b3-f872-4523-a101-a6fbebc7d464",
+                "m_x": 228.0,
+                "m_y": 288.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpHYjI1MGN5SXNJbTFmWm1sc2RHVnlTMlY1ZEhsd1pTSTZJa0Z1ZVNJc0ltMWZkbVZ5YzJsdmJpSTZNWDA9In0sIm1fcG9pbnRJZCI6IjAwNjE0ZjJkLTZkNmMtNDhmYi04MmYyLWRjOTI0MzMxYzY4NSJ9XX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "6a8532ac-114e-4ba7-9fe5-30a0736d5251",
+                        "label": "-",
+                        "parentId": "1dd639b3-f872-4523-a101-a6fbebc7d464",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "00614f2d-6d6c-48fb-82f2-dc924331c685",
+                        "label": "Fonts",
+                        "parentId": "1dd639b3-f872-4523-a101-a6fbebc7d464",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "ebaec222-cbee-48f4-a163-cc3bf089ed79",
+                "m_x": 492.0,
+                "m_y": 228.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZm9udHMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "7d811841-9abf-4761-b4f8-a45a53729457",
+                        "label": "-",
+                        "parentId": "ebaec222-cbee-48f4-a163-cc3bf089ed79",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "2a60c224-e955-4b0a-a327-e99b08889841",
+                        "label": "+",
+                        "parentId": "ebaec222-cbee-48f4-a163-cc3bf089ed79",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Common",
+                "m_id": "35d2ab6e-0d2a-4ad5-bf13-d6b49b970630",
+                "m_x": 24.0,
+                "m_y": 900.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0NvbW1vbiJ9XX0sIm1fbG9hZFBhdGhHdWlkIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiI3MmE5ZDdkODQ0ZTQ0Njk0YjliYjRiMzBhYTk0MWYyNSJ9XX0sIm1faWdub3JlUGF0dGVybnMiOltdLCJtX3Jlc3BvbmRUb0Fzc2V0Q2hhbmdlIjpmYWxzZX0="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "3ad614fd-40ee-42ea-b304-757da498798d",
+                        "label": "+",
+                        "parentId": "35d2ab6e-0d2a-4ad5-bf13-d6b49b970630",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_x": 192.0,
+                "m_y": 852.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY21WbVlXSnpJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiJjMDQ4YzQ5MS1kNDdhLTRiY2UtOTBiNy0wZmNhN2U1YjljOTAifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKVVpYaDBkWEpsTDFWSklpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lRVzU1SWl3aWJWOTJaWEp6YVc5dUlqb3hmUT09In0sIm1fcG9pbnRJZCI6IjBlODVlNTFiLWI1ZGUtNDhmMi1iNzJkLTIyMDczZTQ3NmE3YyJ9LHsibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpCZFdScGJ5SXNJbTFmWm1sc2RHVnlTMlY1ZEhsd1pTSTZJa0YxWkdsdklpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiI4YTEwNThkNS1kM2QzLTQ3ZTQtOGQwNC01MmQ2OGY5OWNlNGEifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKTllYUmxjbWxoYkhNaUxDSnRYMlpwYkhSbGNrdGxlWFI1Y0dVaU9pSkJibmtpTENKdFgzWmxjbk5wYjI0aU9qRjkifSwibV9wb2ludElkIjoiNDZkMTY0NzktNTcwYi00NmNjLThjODUtMDM1YjU0ZDFjYTc3In0seyJtX2luc3RhbmNlIjp7Im1fY2xhc3NOYW1lIjoiVW5pdHlFbmdpbmUuQXNzZXRHcmFwaC5GaWx0ZXJCeU5hbWVBbmRUeXBlLCBBc3NlbWJseS1DU2hhcnAtRWRpdG9yLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbCIsIm1faW5zdGFuY2VEYXRhIjoiQjY0fGV5SnRYMlpwYkhSbGNrdGxlWGR2Y21RaU9pSlVaWGgwZFhKbEwwSkhJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiJjM2I1ZTU4ZC0xZTg5LTQxNDctYjcxNC0yNjRiMjVjNGI4ZDgifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKQmJtbHRZWFJwYjI1eklpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lRVzU1SWl3aWJWOTJaWEp6YVc5dUlqb3hmUT09In0sIm1fcG9pbnRJZCI6IjlhMTgxZjZkLTE2YzAtNGJhNC04N2U2LTRjMWIxODU3MmRmZiJ9XX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "bab92446-b962-4364-bbc1-ed794027aad1",
+                        "label": "-",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "c048c491-d47a-4bce-90b7-0fca7e5b9c90",
+                        "label": "Prefabs",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 125.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "0e85e51b-b5de-48f2-b72d-22073e476a7c",
+                        "label": "Texture/UI",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 125.0,
+                            "y": 65.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "8a1058d5-d3d3-47e4-8d04-52d68f99ce4a",
+                        "label": "Audio[Audio]",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 125.0,
+                            "y": 97.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "46d16479-570b-46cc-8c85-035b54d1ca77",
+                        "label": "Materials",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 125.0,
+                            "y": 129.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "c3b5e58d-1e89-4147-b714-264b25c4b8d8",
+                        "label": "Texture/BG",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 125.0,
+                            "y": 161.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "9a181f6d-16c0-4ba4-87e6-4c1b18572dff",
+                        "label": "Animations",
+                        "parentId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 125.0,
+                            "y": 193.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "eeeae1a0-407b-405e-bf56-819d3453fb4b",
+                "m_x": 468.0,
+                "m_y": 468.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZ2FtZXBsYXlfYmcudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "2ed20ae6-6ede-4071-9550-d900cf7917d9",
+                        "label": "-",
+                        "parentId": "eeeae1a0-407b-405e-bf56-819d3453fb4b",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "a495aea3-981e-4178-b10f-e59b53fa738c",
+                        "label": "+",
+                        "parentId": "eeeae1a0-407b-405e-bf56-819d3453fb4b",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "c56ff9ad-470c-45f3-a5fd-46757d37706d",
+                "m_x": 408.0,
+                "m_y": 792.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiY29tbW9uX3ByZWZhYnMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "6e52a051-ef6a-4e65-ba5f-7e75d65e11e3",
+                        "label": "-",
+                        "parentId": "c56ff9ad-470c-45f3-a5fd-46757d37706d",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "cfc8a4a9-bace-4436-9047-d2180d8c501b",
+                        "label": "+",
+                        "parentId": "c56ff9ad-470c-45f3-a5fd-46757d37706d",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Hall",
+                "m_id": "40b72ca0-1685-4b54-b548-fc9a45122b57",
+                "m_x": 60.0,
+                "m_y": 1236.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0hhbGwifV19LCJtX2xvYWRQYXRoR3VpZCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiODgxNWJiYTM4YTExZWE4NDg4ZTFiMDEyZDk0NGU0OWUifV19LCJtX2lnbm9yZVBhdHRlcm5zIjpbXSwibV9yZXNwb25kVG9Bc3NldENoYW5nZSI6ZmFsc2V9"
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "b82e8b15-aeb7-45ec-a7c6-e0fe2a74d1e7",
+                        "label": "+",
+                        "parentId": "40b72ca0-1685-4b54-b548-fc9a45122b57",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                "m_x": 192.0,
+                "m_y": 1224.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY21WbVlXSnpJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiI1MTg5OTczOS01NGRiLTQxZmEtYmNjMC03MmFiYmUzYmU4YTIifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKVVpYaDBkWEpsTDFWSklpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lWR1Y0ZEhWeVpTSXNJbTFmZG1WeWMybHZiaUk2TVgwPSJ9LCJtX3BvaW50SWQiOiJlZDU4OTQ5MC0zODMwLTRlNmItOWQ0Yi1jN2E1ZmViOTViMDEifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKVVpYaDBkWEpsTDBKSElpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lWR1Y0ZEhWeVpTSXNJbTFmZG1WeWMybHZiaUk2TVgwPSJ9LCJtX3BvaW50SWQiOiJiZTg0NjE1Zi03MjY2LTQ4YWQtYTZhNC1lZTc0ZWU2NGY0Y2EifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKRlptWmxZM1FpTENKdFgyWnBiSFJsY2t0bGVYUjVjR1VpT2lKQmJua2lMQ0p0WDNabGNuTnBiMjRpT2pGOSJ9LCJtX3BvaW50SWQiOiJlODQ5YWY0Ny05MmY5LTQ2NDMtODRjOS0yYjYzOTk3YmEzZDMifV19"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "e7f3f9f8-dc20-4766-bdeb-b2234284f325",
+                        "label": "-",
+                        "parentId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "51899739-54db-41fa-bcc0-72abbe3be8a2",
+                        "label": "Prefabs",
+                        "parentId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 163.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "ed589490-3830-4e6b-9d4b-c7a5feb95b01",
+                        "label": "Texture/UI[Texture]",
+                        "parentId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 163.0,
+                            "y": 65.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "be84615f-7266-48ad-a6a4-ee74ee64f4ca",
+                        "label": "Texture/BG[Texture]",
+                        "parentId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 163.0,
+                            "y": 97.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "e849af47-92f9-4643-84c9-2b63997ba3d3",
+                        "label": "Effect",
+                        "parentId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 163.0,
+                            "y": 129.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "3d32c240-664e-46d5-9dfc-de69eca34082",
+                "m_x": 408.0,
+                "m_y": 1176.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiaGFsbF9wcmVmYWJzLnVuaXR5M2QifV19LCJtX3ZhcmlhbnRzIjpbXSwibV91c2VHcm91cEFzVmFyaWFudHMiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "48b08058-7d36-4ed4-a1f0-2db17977cfd7",
+                        "label": "-",
+                        "parentId": "3d32c240-664e-46d5-9dfc-de69eca34082",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "81b384f3-cd37-4d20-a0ca-3447137f758e",
+                        "label": "+",
+                        "parentId": "3d32c240-664e-46d5-9dfc-de69eca34082",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "112685d1-45b9-4c33-9099-3d79597d3f12",
+                "m_x": 408.0,
+                "m_y": 1236.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiaGFsbF9hdGxhcy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "eed8bb6a-32f8-4d53-b8a8-c7cd45852772",
+                        "label": "-",
+                        "parentId": "112685d1-45b9-4c33-9099-3d79597d3f12",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "1eb3c8b5-45c7-4d89-ad1a-10f04134a324",
+                        "label": "+",
+                        "parentId": "112685d1-45b9-4c33-9099-3d79597d3f12",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "49f60a7c-0f5f-48c8-bfdb-d2c90210d393",
+                "m_x": 408.0,
+                "m_y": 1296.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiaGFsbF90ZXhfYmcudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "844239fa-224c-419a-8d49-bbb5ee90babd",
+                        "label": "-",
+                        "parentId": "49f60a7c-0f5f-48c8-bfdb-d2c90210d393",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "1407cd12-9994-4922-813f-38b7fe823357",
+                        "label": "+",
+                        "parentId": "49f60a7c-0f5f-48c8-bfdb-d2c90210d393",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "b44c4921-b77b-4e02-a47b-bbc0b16a62b3",
+                "m_x": 408.0,
+                "m_y": 852.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiY29tbW9uX2F0bGFzLnVuaXR5M2QifV19LCJtX3ZhcmlhbnRzIjpbXSwibV91c2VHcm91cEFzVmFyaWFudHMiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "2c52020e-228a-45aa-8472-6d5316760851",
+                        "label": "-",
+                        "parentId": "b44c4921-b77b-4e02-a47b-bbc0b16a62b3",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "75f66038-d09b-458a-b15f-7cec81729e77",
+                        "label": "+",
+                        "parentId": "b44c4921-b77b-4e02-a47b-bbc0b16a62b3",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Arena",
+                "m_id": "80cdd699-cbec-45b2-b63c-8817989dd80f",
+                "m_x": 36.0,
+                "m_y": 1452.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0FyZW5hIn1dfSwibV9sb2FkUGF0aEd1aWQiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6IjZkZDY4NjI2M2I1Y2Y4ODQ3OGM5OWRkZTNmZDczNmYxIn1dfSwibV9pZ25vcmVQYXR0ZXJucyI6W10sIm1fcmVzcG9uZFRvQXNzZXRDaGFuZ2UiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "e1bf9e6a-b1cd-4495-a802-6801b7ee3718",
+                        "label": "+",
+                        "parentId": "80cdd699-cbec-45b2-b63c-8817989dd80f",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                "m_x": 216.0,
+                "m_y": 1464.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY21WbVlXSnpJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiI1MjlkMGVmNy04OTlmLTQ4NTgtOTgzMC04NzBmY2U1Zjg1YjIifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKVVpYaDBkWEpsTDFWSklpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lRVzU1SWl3aWJWOTJaWEp6YVc5dUlqb3hmUT09In0sIm1fcG9pbnRJZCI6IjEzM2M0ODliLWZkNTgtNDE3Yi1iZDQ5LTAxOWU3OGQ4NDE4YSJ9XX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "59e6689d-98f2-492b-bb48-0c2263290f10",
+                        "label": "-",
+                        "parentId": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "529d0ef7-899f-4858-9830-870fce5f85b2",
+                        "label": "Prefabs",
+                        "parentId": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "133c489b-fd58-417b-bd49-019e78d8418a",
+                        "label": "Texture/UI",
+                        "parentId": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 65.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "7bdc2965-9919-4b0b-8e07-f2db6bc77ca8",
+                "m_x": 408.0,
+                "m_y": 1440.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiYXJlbmFfcHJlZmFicy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "1933f023-0f4e-426a-85a5-c8613f335272",
+                        "label": "-",
+                        "parentId": "7bdc2965-9919-4b0b-8e07-f2db6bc77ca8",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "43d7b53e-8d0f-46ec-823e-285047612fa5",
+                        "label": "+",
+                        "parentId": "7bdc2965-9919-4b0b-8e07-f2db6bc77ca8",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "7f006c3b-8b98-442f-ab1b-fa07056029bd",
+                "m_x": 408.0,
+                "m_y": 1512.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiYXJlbmFfYXRsYXMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "749e53c8-d420-4547-ae41-24050da43661",
+                        "label": "-",
+                        "parentId": "7f006c3b-8b98-442f-ab1b-fa07056029bd",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "673b1f2a-6fd6-4b2b-a546-282a5d9e13fe",
+                        "label": "+",
+                        "parentId": "7f006c3b-8b98-442f-ab1b-fa07056029bd",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Scene",
+                "m_id": "bba75fa5-7a92-42df-af04-29ecf9a669b7",
+                "m_x": 60.0,
+                "m_y": 168.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJTY2VuZXMifV19LCJtX2xvYWRQYXRoR3VpZCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiMTMxYTZiMjFjODYwNWY4NDM5NmJlOWY2NzUxZmI2ZTMifV19LCJtX2lnbm9yZVBhdHRlcm5zIjpbXSwibV9yZXNwb25kVG9Bc3NldENoYW5nZSI6ZmFsc2V9"
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "01d54923-25fe-4162-90d5-c6f113c60053",
+                        "label": "+",
+                        "parentId": "bba75fa5-7a92-42df-af04-29ecf9a669b7",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "0246a965-3ebf-4a13-83c9-2bb94e3e022a",
+                "m_x": 204.0,
+                "m_y": 216.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY205a2RXTjBhVzl1SWl3aWJWOW1hV3gwWlhKTFpYbDBlWEJsSWpvaVUyTmxibVVpTENKdFgzWmxjbk5wYjI0aU9qRjkifSwibV9wb2ludElkIjoiMzM5ZTViNmQtYzQyNi00OTk2LTk3NWUtNWU4MWQwODA5ZDkyIn1dfQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "2e371c0b-9452-44f7-94a5-37a458f307d6",
+                        "label": "-",
+                        "parentId": "0246a965-3ebf-4a13-83c9-2bb94e3e022a",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "339e5b6d-c426-4996-975e-5e81d0809d92",
+                        "label": "Production[Scene]",
+                        "parentId": "0246a965-3ebf-4a13-83c9-2bb94e3e022a",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 158.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "3db573ad-81ad-46eb-b23c-4fcdc318e362",
+                "m_x": 420.0,
+                "m_y": 912.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiY29tbW9uX2F1ZGlvcy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "74dbbdc4-fb63-4d4a-aa98-1714e84043a8",
+                        "label": "-",
+                        "parentId": "3db573ad-81ad-46eb-b23c-4fcdc318e362",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "51868a37-aa93-42f2-8f4a-22557330f24d",
+                        "label": "+",
+                        "parentId": "3db573ad-81ad-46eb-b23c-4fcdc318e362",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "d0ef43c5-877a-4f7c-938f-77252e0e4ae8",
+                "m_x": 480.0,
+                "m_y": 156.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoic2NlbmVfKi51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "062c54b9-12b1-4210-88b5-184382756ccc",
+                        "label": "-",
+                        "parentId": "d0ef43c5-877a-4f7c-938f-77252e0e4ae8",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "9fb9c75d-41e8-41dc-bb88-df5005619b8b",
+                        "label": "+",
+                        "parentId": "d0ef43c5-877a-4f7c-938f-77252e0e4ae8",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Group By File",
+                "m_id": "79514fd4-ef7a-43a3-8039-78ccbc0c0d11",
+                "m_x": 336.0,
+                "m_y": 168.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.GroupingByFile, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2dyb3VwTmFtZUZvcm1hdCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoie0ZpbGVOYW1lfSJ9XX19"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "6d96f3c3-3df5-4552-91a1-21762bab9d82",
+                        "label": "-",
+                        "parentId": "79514fd4-ef7a-43a3-8039-78ccbc0c0d11",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "97f37a6b-e5fe-4a58-8de0-8567ca5c6b5d",
+                        "label": "+",
+                        "parentId": "79514fd4-ef7a-43a3-8039-78ccbc0c0d11",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 118.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "GamePlay_Arena",
+                "m_id": "19ced9d2-afd5-40e8-9162-bc3f870632b6",
+                "m_x": 24.0,
+                "m_y": 672.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0dhbWVQbGF5X0FyZW5hIn1dfSwibV9sb2FkUGF0aEd1aWQiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6IjEwNjA3NjY0ZTI4N2ZkOTQ0YjU2NjE4MmI0MTNiODFjIn1dfSwibV9pZ25vcmVQYXR0ZXJucyI6W10sIm1fcmVzcG9uZFRvQXNzZXRDaGFuZ2UiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "11b8a3d5-e6be-430a-84a4-a069f64cf771",
+                        "label": "+",
+                        "parentId": "19ced9d2-afd5-40e8-9162-bc3f870632b6",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 139.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                "m_x": 228.0,
+                "m_y": 624.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpVWlhoMGRYSmxMMVZKSWl3aWJWOW1hV3gwWlhKTFpYbDBlWEJsSWpvaVZHVjRkSFZ5WlNJc0ltMWZkbVZ5YzJsdmJpSTZNWDA9In0sIm1fcG9pbnRJZCI6IjQzNDdhMTc3LWY3OTAtNDA3MS04NTAyLTk5MmFjMTQ0NzdiOCJ9LHsibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY21WbVlXSnpJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiIzNWE0MTU2Yy03OGJkLTQ2MGItYTkwMi1mMTBlMTg4NTEwMDIifV19"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "215e81c3-f60e-4d8d-a740-fcdd260af1d3",
+                        "label": "-",
+                        "parentId": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "4347a177-f790-4071-8502-992ac14477b8",
+                        "label": "Texture/UI[Texture]",
+                        "parentId": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 163.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "35a4156c-78bd-460b-a902-f10e18851002",
+                        "label": "Prefabs",
+                        "parentId": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 163.0,
+                            "y": 65.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "7670a748-5309-46a0-bc22-d6379c596d45",
+                "m_x": 456.0,
+                "m_y": 600.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZ2FtZXBsYXlfYXJlbmFfYXRsYXMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "c7c82ade-4d6f-4167-a416-8fcf6d140b53",
+                        "label": "-",
+                        "parentId": "7670a748-5309-46a0-bc22-d6379c596d45",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "4419818b-866e-44c3-871e-8bc86eaf13e3",
+                        "label": "+",
+                        "parentId": "7670a748-5309-46a0-bc22-d6379c596d45",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "33ab918c-8a6c-4203-8904-776982a26b99",
+                "m_x": 444.0,
+                "m_y": 672.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZ2FtZXBsYXlfYXJlbmFfcHJlZmFicy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "4d949ee3-7aac-4d2b-bf34-f204cd7cf65f",
+                        "label": "-",
+                        "parentId": "33ab918c-8a6c-4203-8904-776982a26b99",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "f5c7a4c1-9931-41a7-9c9b-a4854a8b13cf",
+                        "label": "+",
+                        "parentId": "33ab918c-8a6c-4203-8904-776982a26b99",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "67674c0e-8a61-4770-8b0a-f3427e74c3df",
+                "m_x": 468.0,
+                "m_y": 528.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiZ2FtZXBsYXlfZm9udHMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "ea5fe0c6-b359-4e82-b555-0eea5d4e6b8d",
+                        "label": "-",
+                        "parentId": "67674c0e-8a61-4770-8b0a-f3427e74c3df",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "d41cbb82-dd50-4bbf-943f-b382c50db790",
+                        "label": "+",
+                        "parentId": "67674c0e-8a61-4770-8b0a-f3427e74c3df",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Shaders",
+                "m_id": "668000d4-a404-4e88-9ae6-a7f2d85828db",
+                "m_x": 36.0,
+                "m_y": 1620.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL1NoYWRlcnMifV19LCJtX2xvYWRQYXRoR3VpZCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiNmNjNTBjNGNjZWEyNWYzNGI4MTEyZjM0YjhhNTcxZjgifV19LCJtX2lnbm9yZVBhdHRlcm5zIjpbXSwibV9yZXNwb25kVG9Bc3NldENoYW5nZSI6ZmFsc2V9"
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "7358d463-312e-409a-9beb-7093fd9af559",
+                        "label": "+",
+                        "parentId": "668000d4-a404-4e88-9ae6-a7f2d85828db",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "d63d9797-9d8a-47ec-b51c-508233272a8a",
+                "m_x": 216.0,
+                "m_y": 1656.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUlpTENKdFgyWnBiSFJsY2t0bGVYUjVjR1VpT2lKVGFHRmtaWElpTENKdFgzWmxjbk5wYjI0aU9qRjkifSwibV9wb2ludElkIjoiZmU3NmI3ZWUtN2FkMC00Y2JkLTllNGMtZTk2NTMwNjA1YTEwIn1dfQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "e6582b5e-042b-4a67-a99a-209f862e1ad8",
+                        "label": "-",
+                        "parentId": "d63d9797-9d8a-47ec-b51c-508233272a8a",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "fe76b7ee-7ad0-4cbd-9e4c-e96530605a10",
+                        "label": "[Shader]",
+                        "parentId": "d63d9797-9d8a-47ec-b51c-508233272a8a",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "f426f905-9598-45b2-801b-75e8ed7ff05f",
+                "m_x": 420.0,
+                "m_y": 1656.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoic2hhZGVycy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "2f6a5db5-fcb8-4d23-9364-8834e63d4c85",
+                        "label": "-",
+                        "parentId": "f426f905-9598-45b2-801b-75e8ed7ff05f",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "bf62c222-cc85-4376-a388-6a4968e71eaf",
+                        "label": "+",
+                        "parentId": "f426f905-9598-45b2-801b-75e8ed7ff05f",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "c8d02940-a34c-4891-a5f3-27a14163e287",
+                "m_x": 408.0,
+                "m_y": 1356.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiaGFsbF9lZmZlY3QudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "2db36310-caa2-484f-b497-5b5b09752556",
+                        "label": "-",
+                        "parentId": "c8d02940-a34c-4891-a5f3-27a14163e287",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "29ac84f6-4a62-43e8-92c2-89f4dbe8567e",
+                        "label": "+",
+                        "parentId": "c8d02940-a34c-4891-a5f3-27a14163e287",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "ae767f7f-52fb-440e-bf5e-7beb0064d49c",
+                "m_x": 420.0,
+                "m_y": 972.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiY29tbW9uX21hdGVyaWFscy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "6c378357-43f3-4477-9ae4-81b179a1f949",
+                        "label": "-",
+                        "parentId": "ae767f7f-52fb-440e-bf5e-7beb0064d49c",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "568728fe-10b2-4708-9d86-6484ba30cdba",
+                        "label": "+",
+                        "parentId": "ae767f7f-52fb-440e-bf5e-7beb0064d49c",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "App",
+                "m_id": "eed846e9-7b80-45ad-985d-606c2eec1133",
+                "m_x": 36.0,
+                "m_y": 1752.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0FwcCJ9XX0sIm1fbG9hZFBhdGhHdWlkIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiI0ODc2M2Y0OGFiZWVmNTQ0NmIzNDEzZGMyM2VjOGI3NyJ9XX0sIm1faWdub3JlUGF0dGVybnMiOltdLCJtX3Jlc3BvbmRUb0Fzc2V0Q2hhbmdlIjpmYWxzZX0="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "caacf224-5446-49c2-bc44-02f858ec6c6d",
+                        "label": "+",
+                        "parentId": "eed846e9-7b80-45ad-985d-606c2eec1133",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "db72d6af-5b8c-4a26-99cc-c427e595a9f6",
+                "m_x": 216.0,
+                "m_y": 1752.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY21WbVlXSnpJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiJmNTcwZjU5ZS1hMmI2LTQwZmEtOWIzYS00N2VlMmY3ZGI5MDkifV19"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "bdf4443b-3d42-4a27-8e44-e23f74314a38",
+                        "label": "-",
+                        "parentId": "db72d6af-5b8c-4a26-99cc-c427e595a9f6",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "f570f59e-a2b6-40fa-9b3a-47ee2f7db909",
+                        "label": "Prefabs",
+                        "parentId": "db72d6af-5b8c-4a26-99cc-c427e595a9f6",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "8684d048-0c3b-47f7-891c-3feec41be40e",
+                "m_x": 420.0,
+                "m_y": 1752.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiYXBwX3ByZWZhYnMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "d8b7932f-95f3-4f7f-8b91-652f98d0c998",
+                        "label": "-",
+                        "parentId": "8684d048-0c3b-47f7-891c-3feec41be40e",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "ff711999-33a3-473a-9866-793918021c7f",
+                        "label": "+",
+                        "parentId": "8684d048-0c3b-47f7-891c-3feec41be40e",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "db9794e7-9e0e-485e-b7e3-2aa084deab0b",
+                "m_x": 420.0,
+                "m_y": 1032.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiY29tbW9uX2JnLnVuaXR5M2QifV19LCJtX3ZhcmlhbnRzIjpbXSwibV91c2VHcm91cEFzVmFyaWFudHMiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "790c7e25-9e67-4ea9-9920-9b89e21fa660",
+                        "label": "-",
+                        "parentId": "db9794e7-9e0e-485e-b7e3-2aa084deab0b",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "61543c0b-a62a-4278-a84b-7b71c09b7883",
+                        "label": "+",
+                        "parentId": "db9794e7-9e0e-485e-b7e3-2aa084deab0b",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "969ddd17-198c-4983-8421-cc41e710de5d",
+                "m_x": 420.0,
+                "m_y": 1092.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiY29tbW9uX2FuaW1hdGlvbnMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "40cfc976-846c-4f8b-9dc6-f21ea077006d",
+                        "label": "-",
+                        "parentId": "969ddd17-198c-4983-8421-cc41e710de5d",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "92b36f6e-f6fe-4870-ac20-29b004b08422",
+                        "label": "+",
+                        "parentId": "969ddd17-198c-4983-8421-cc41e710de5d",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Render Setting",
+                "m_id": "dad2f9f4-e53f-43fb-a838-02681a6495c7",
+                "m_x": 24.0,
+                "m_y": 1836.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL1JlbmRlclNldHRpbmcifV19LCJtX2xvYWRQYXRoR3VpZCI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoiOWIwMGEyNzQ5OTc5OTdjNDI5YWM4ZjI2ZjRjYTVjMDQifV19LCJtX2lnbm9yZVBhdHRlcm5zIjpbXSwibV9yZXNwb25kVG9Bc3NldENoYW5nZSI6ZmFsc2V9"
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "539ea49f-1573-4503-bef7-6e958ef6f098",
+                        "label": "+",
+                        "parentId": "dad2f9f4-e53f-43fb-a838-02681a6495c7",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 126.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "be63e7bd-6e0e-4ae1-9d6b-a3d4fd0d0339",
+                "m_x": 432.0,
+                "m_y": 1848.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoicmVuZGVyX3NldHRpbmcudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "78e5a07a-a939-4de1-b301-392bf9d41055",
+                        "label": "-",
+                        "parentId": "be63e7bd-6e0e-4ae1-9d6b-a3d4fd0d0339",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "7afdceed-74b0-4720-8e24-268f3e3a2654",
+                        "label": "+",
+                        "parentId": "be63e7bd-6e0e-4ae1-9d6b-a3d4fd0d0339",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Login",
+                "m_id": "3f52d473-8e2d-4514-a5fb-f72ef5c5918b",
+                "m_x": 12.0,
+                "m_y": 2004.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Loader, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2xvYWRQYXRoIjp7Im1fdmFsdWVzIjpbeyJ0YXJnZXRHcm91cCI6MCwidmFsdWUiOiJNb2R1bGVzL0xvZ2luIn1dfSwibV9sb2FkUGF0aEd1aWQiOnsibV92YWx1ZXMiOlt7InRhcmdldEdyb3VwIjowLCJ2YWx1ZSI6IjllMjZjOGY2NjM4Yzk0ZjRlOGE5Yzc5MTEwZmM3NDVjIn1dfSwibV9pZ25vcmVQYXR0ZXJucyI6W10sIm1fcmVzcG9uZFRvQXNzZXRDaGFuZ2UiOmZhbHNlfQ=="
+                },
+                "m_inputPoints": [],
+                "m_outputPoints": [
+                    {
+                        "id": "f1b99850-5709-42fb-a721-208617257544",
+                        "label": "+",
+                        "parentId": "3f52d473-8e2d-4514-a5fb-f72ef5c5918b",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 111.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Split By Filter",
+                "m_id": "1e113677-8723-47e2-9a94-264c048ccf46",
+                "m_x": 216.0,
+                "m_y": 1980.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.Filter, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2ZpbHRlciI6W3sibV9pbnN0YW5jZSI6eyJtX2NsYXNzTmFtZSI6IlVuaXR5RW5naW5lLkFzc2V0R3JhcGguRmlsdGVyQnlOYW1lQW5kVHlwZSwgQXNzZW1ibHktQ1NoYXJwLUVkaXRvciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwiLCJtX2luc3RhbmNlRGF0YSI6IkI2NHxleUp0WDJacGJIUmxja3RsZVhkdmNtUWlPaUpRY21WbVlXSnpJaXdpYlY5bWFXeDBaWEpMWlhsMGVYQmxJam9pUVc1NUlpd2liVjkyWlhKemFXOXVJam94ZlE9PSJ9LCJtX3BvaW50SWQiOiIzOGNmODFjYS1kNjk2LTQyZmEtOTc0Zi1lZjVkZmMwMjNhMzMifSx7Im1faW5zdGFuY2UiOnsibV9jbGFzc05hbWUiOiJVbml0eUVuZ2luZS5Bc3NldEdyYXBoLkZpbHRlckJ5TmFtZUFuZFR5cGUsIEFzc2VtYmx5LUNTaGFycC1FZGl0b3IsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsIiwibV9pbnN0YW5jZURhdGEiOiJCNjR8ZXlKdFgyWnBiSFJsY2t0bGVYZHZjbVFpT2lKVVpYaDBkWEpsTDFWSklpd2liVjltYVd4MFpYSkxaWGwwZVhCbElqb2lRVzU1SWl3aWJWOTJaWEp6YVc5dUlqb3hmUT09In0sIm1fcG9pbnRJZCI6IjdlMDE1OWZkLWVkYzctNDFiNS05ZmU2LWVmZDI5MTc3OGM2YyJ9XX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "cd4dd0d2-ab2f-4890-b3d1-fa9870137c2f",
+                        "label": "-",
+                        "parentId": "1e113677-8723-47e2-9a94-264c048ccf46",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "38cf81ca-d696-42fa-974f-ef5dfc023a33",
+                        "label": "Prefabs",
+                        "parentId": "1e113677-8723-47e2-9a94-264c048ccf46",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    },
+                    {
+                        "id": "7e0159fd-edc7-41b5-9fe6-efd291778c6c",
+                        "label": "Texture/UI",
+                        "parentId": "1e113677-8723-47e2-9a94-264c048ccf46",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 117.0,
+                            "y": 65.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "bb564002-33dc-47ec-b24b-1acfd11cabaf",
+                "m_x": 432.0,
+                "m_y": 1932.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoibG9naW5fcHJlZmFicy51bml0eTNkIn1dfSwibV92YXJpYW50cyI6W10sIm1fdXNlR3JvdXBBc1ZhcmlhbnRzIjpmYWxzZX0="
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "7572a6fd-547c-4626-b94a-47e2e25402e0",
+                        "label": "-",
+                        "parentId": "bb564002-33dc-47ec-b24b-1acfd11cabaf",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "70326df1-8993-4a39-a67c-8196879635a2",
+                        "label": "+",
+                        "parentId": "bb564002-33dc-47ec-b24b-1acfd11cabaf",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            },
+            {
+                "m_name": "Configure Bundle From Group",
+                "m_id": "6dceca36-a542-4a16-a703-0cada76c9b6c",
+                "m_x": 432.0,
+                "m_y": 2004.0,
+                "m_nodeInstance": {
+                    "m_className": "UnityEngine.AssetGraph.BundleConfigurator, Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+                    "m_instanceData": "B64|eyJtX2J1bmRsZU5hbWVUZW1wbGF0ZSI6eyJtX3ZhbHVlcyI6W3sidGFyZ2V0R3JvdXAiOjAsInZhbHVlIjoibG9naW5fYXRsYXMudW5pdHkzZCJ9XX0sIm1fdmFyaWFudHMiOltdLCJtX3VzZUdyb3VwQXNWYXJpYW50cyI6ZmFsc2V9"
+                },
+                "m_inputPoints": [
+                    {
+                        "id": "c9c0157a-12e2-4f77-9824-917597b1a354",
+                        "label": "-",
+                        "parentId": "6dceca36-a542-4a16-a703-0cada76c9b6c",
+                        "isInput": true,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 0.0,
+                            "y": 30.5,
+                            "width": 21.0,
+                            "height": 29.0
+                        }
+                    }
+                ],
+                "m_outputPoints": [
+                    {
+                        "id": "a2231d19-46aa-4fdc-bba0-535fb3af31c9",
+                        "label": "+",
+                        "parentId": "6dceca36-a542-4a16-a703-0cada76c9b6c",
+                        "isInput": false,
+                        "buttonRect": {
+                            "serializedVersion": "2",
+                            "x": 208.0,
+                            "y": 33.5,
+                            "width": 10.0,
+                            "height": 23.0
+                        }
+                    }
+                ]
+            }
+        ],
+        "m_allConnections": [
+            {
+                "m_id": "cd7b8aa2-790b-47d0-b1c1-0f29d64ba6f4",
+                "m_fromNodeId": "25b8fef4-465e-4867-9f78-5ffdc3a3a7aa",
+                "m_fromNodeConnectionPointId": "5e23f1f8-79f8-4fe3-838e-aeadb082a88f",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "7f738bf8-2ebc-44fe-ac23-bc27d076a15d",
+                "m_fromNodeId": "b303e531-63f2-4d74-8ff4-d27c035d4d95",
+                "m_fromNodeConnectionPointId": "ecb154b0-9d64-4b59-bd4c-778f8e1c311c",
+                "m_toNodeId": "25b8fef4-465e-4867-9f78-5ffdc3a3a7aa",
+                "m_toNodeConnectionPoiontId": "c4d330d2-978b-490f-986e-e81e26499f1b",
+                "m_label": ""
+            },
+            {
+                "m_id": "0710fb2d-e1fc-4928-b629-f507e21dde6d",
+                "m_fromNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_fromNodeConnectionPointId": "714ac1a1-690b-4c8b-b3e1-08e0d767cf1a",
+                "m_toNodeId": "e18fbbe7-9af0-435e-a600-b00985377d02",
+                "m_toNodeConnectionPoiontId": "bad33695-6cdc-4390-a2fb-85ca5e2b1ed9",
+                "m_label": "+"
+            },
+            {
+                "m_id": "3b4b2168-a5c4-4ef1-924f-6175e759451e",
+                "m_fromNodeId": "e18fbbe7-9af0-435e-a600-b00985377d02",
+                "m_fromNodeConnectionPointId": "4396128f-7539-41a7-90e0-03d7f52ce850",
+                "m_toNodeId": "d2687bd7-6b9f-4056-8682-09082ee183b5",
+                "m_toNodeConnectionPoiontId": "75f93345-faa8-4f8a-955f-f705b07d8701",
+                "m_label": "+"
+            },
+            {
+                "m_id": "6377348a-a07d-43b5-990e-aedde2d19c1a",
+                "m_fromNodeId": "80a934ae-ed40-4446-8ad6-15e8a576fb79",
+                "m_fromNodeConnectionPointId": "6f533802-8d06-4184-9bd4-796257d406a5",
+                "m_toNodeId": "ff038351-73e7-4a7f-92b5-b7da2a62556d",
+                "m_toNodeConnectionPoiontId": "baf5f903-9ebc-4c7a-8e77-f6c640a1618a",
+                "m_label": "+"
+            },
+            {
+                "m_id": "402568c7-23a8-4ad2-af36-6b97b267d719",
+                "m_fromNodeId": "ff038351-73e7-4a7f-92b5-b7da2a62556d",
+                "m_fromNodeConnectionPointId": "45c348af-5719-4892-b1a1-5d92694cb486",
+                "m_toNodeId": "7f30b3b4-6a9a-46f2-8a08-f429355f65cd",
+                "m_toNodeConnectionPoiontId": "330cb968-aa67-4f33-89aa-33a50359b273",
+                "m_label": ""
+            },
+            {
+                "m_id": "2fdee68a-d353-4410-b35b-121e270746a9",
+                "m_fromNodeId": "7f30b3b4-6a9a-46f2-8a08-f429355f65cd",
+                "m_fromNodeConnectionPointId": "72117aba-c09c-48a0-b84d-d08bf9588100",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "29fa8b4e-9278-4d73-81be-f46090f18609",
+                "m_fromNodeId": "42c6371d-d418-4a6f-b795-04f3d93fb940",
+                "m_fromNodeConnectionPointId": "3dd43768-d530-4add-8fef-6553526110ee",
+                "m_toNodeId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                "m_toNodeConnectionPoiontId": "3462185b-d364-46b0-add8-020ed980c515",
+                "m_label": "+"
+            },
+            {
+                "m_id": "f69b26fb-2023-4a0f-bb46-0ca2922a5994",
+                "m_fromNodeId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                "m_fromNodeConnectionPointId": "d7babc73-109d-4187-82e3-7087efdc2a5b",
+                "m_toNodeId": "452cf580-0a42-4182-a571-fd4f08d325b6",
+                "m_toNodeConnectionPoiontId": "d6a751d5-3897-4785-9a8f-081725bea982",
+                "m_label": "Texture/UI"
+            },
+            {
+                "m_id": "8c39253a-3c7c-4d33-a7f2-f01bd0252d73",
+                "m_fromNodeId": "452cf580-0a42-4182-a571-fd4f08d325b6",
+                "m_fromNodeConnectionPointId": "4bc2e3fd-90d6-4809-958f-32c768a69aae",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "0a5779ad-a881-4877-8b77-29fa5951c97a",
+                "m_fromNodeId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                "m_fromNodeConnectionPointId": "4e0c0550-3277-4fe3-b0db-77f00c423ffb",
+                "m_toNodeId": "7c5b450d-a87d-4b90-bda7-ca9651dae031",
+                "m_toNodeConnectionPoiontId": "0c0b9ac6-2627-49e9-8945-0b454533ceb2",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "c2b02b0f-2104-4df9-a831-b1c9746021f2",
+                "m_fromNodeId": "7c5b450d-a87d-4b90-bda7-ca9651dae031",
+                "m_fromNodeConnectionPointId": "54938c76-9c8c-488d-ba9d-9008aab7048d",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "52b0749c-47e9-4dd4-91e5-a139fd8ecd79",
+                "m_fromNodeId": "893fd62f-1505-466f-a76d-6659b5696a00",
+                "m_fromNodeConnectionPointId": "32cfefdb-765b-4afe-b732-4a358bb9b53b",
+                "m_toNodeId": "1dd639b3-f872-4523-a101-a6fbebc7d464",
+                "m_toNodeConnectionPoiontId": "6a8532ac-114e-4ba7-9fe5-30a0736d5251",
+                "m_label": "+"
+            },
+            {
+                "m_id": "9a07fe10-c879-4364-b082-c056fe06c5ca",
+                "m_fromNodeId": "ebaec222-cbee-48f4-a163-cc3bf089ed79",
+                "m_fromNodeConnectionPointId": "2a60c224-e955-4b0a-a327-e99b08889841",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "1bfd684c-9d0e-41af-98af-22a05c74f984",
+                "m_fromNodeId": "35d2ab6e-0d2a-4ad5-bf13-d6b49b970630",
+                "m_fromNodeConnectionPointId": "3ad614fd-40ee-42ea-b304-757da498798d",
+                "m_toNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_toNodeConnectionPoiontId": "bab92446-b962-4364-bbc1-ed794027aad1",
+                "m_label": "+"
+            },
+            {
+                "m_id": "f9586bac-6fa2-4d43-aaa4-fd4427bad1b2",
+                "m_fromNodeId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                "m_fromNodeConnectionPointId": "00d9dca2-04cd-4c11-ac7b-739b777484cc",
+                "m_toNodeId": "eeeae1a0-407b-405e-bf56-819d3453fb4b",
+                "m_toNodeConnectionPoiontId": "2ed20ae6-6ede-4071-9550-d900cf7917d9",
+                "m_label": "Texture/BG"
+            },
+            {
+                "m_id": "de97970a-d8b9-43e9-8e77-1974347d5054",
+                "m_fromNodeId": "eeeae1a0-407b-405e-bf56-819d3453fb4b",
+                "m_fromNodeConnectionPointId": "a495aea3-981e-4178-b10f-e59b53fa738c",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "67763407-cb47-443a-a5e5-9239929fa275",
+                "m_fromNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_fromNodeConnectionPointId": "c048c491-d47a-4bce-90b7-0fca7e5b9c90",
+                "m_toNodeId": "c56ff9ad-470c-45f3-a5fd-46757d37706d",
+                "m_toNodeConnectionPoiontId": "6e52a051-ef6a-4e65-ba5f-7e75d65e11e3",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "32e68622-4f31-4322-ac89-fb8b4422ea1e",
+                "m_fromNodeId": "c56ff9ad-470c-45f3-a5fd-46757d37706d",
+                "m_fromNodeConnectionPointId": "cfc8a4a9-bace-4436-9047-d2180d8c501b",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "ca5d09e7-aa2c-417e-b8f5-37da63f09e6b",
+                "m_fromNodeId": "cb5adbc2-cdc5-411d-8690-2709f65c22a4",
+                "m_fromNodeConnectionPointId": "d593f0dc-7285-4098-9c4c-23597da0beac",
+                "m_toNodeId": "b303e531-63f2-4d74-8ff4-d27c035d4d95",
+                "m_toNodeConnectionPoiontId": "f626de45-6a65-4180-a340-8d1cb8abcefe",
+                "m_label": "+"
+            },
+            {
+                "m_id": "dd8ceee1-f0cd-4faa-bdb9-875003a16c0d",
+                "m_fromNodeId": "40b72ca0-1685-4b54-b548-fc9a45122b57",
+                "m_fromNodeConnectionPointId": "b82e8b15-aeb7-45ec-a7c6-e0fe2a74d1e7",
+                "m_toNodeId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                "m_toNodeConnectionPoiontId": "e7f3f9f8-dc20-4766-bdeb-b2234284f325",
+                "m_label": "+"
+            },
+            {
+                "m_id": "889c7a3b-faca-401b-8256-83e4c5e836af",
+                "m_fromNodeId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                "m_fromNodeConnectionPointId": "ed589490-3830-4e6b-9d4b-c7a5feb95b01",
+                "m_toNodeId": "112685d1-45b9-4c33-9099-3d79597d3f12",
+                "m_toNodeConnectionPoiontId": "eed8bb6a-32f8-4d53-b8a8-c7cd45852772",
+                "m_label": "Texture/UI[Texture]"
+            },
+            {
+                "m_id": "7a13b24e-22a1-4846-a385-d646fba337b9",
+                "m_fromNodeId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                "m_fromNodeConnectionPointId": "be84615f-7266-48ad-a6a4-ee74ee64f4ca",
+                "m_toNodeId": "49f60a7c-0f5f-48c8-bfdb-d2c90210d393",
+                "m_toNodeConnectionPoiontId": "844239fa-224c-419a-8d49-bbb5ee90babd",
+                "m_label": "Texture/BG[Texture]"
+            },
+            {
+                "m_id": "47845d94-600e-41bc-a3ba-7638977b8117",
+                "m_fromNodeId": "3d32c240-664e-46d5-9dfc-de69eca34082",
+                "m_fromNodeConnectionPointId": "81b384f3-cd37-4d20-a0ca-3447137f758e",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "6dd11439-94f9-4d91-8097-82b3df2bb559",
+                "m_fromNodeId": "112685d1-45b9-4c33-9099-3d79597d3f12",
+                "m_fromNodeConnectionPointId": "1eb3c8b5-45c7-4d89-ad1a-10f04134a324",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "c8419eec-7c95-474e-badf-20000cda4440",
+                "m_fromNodeId": "49f60a7c-0f5f-48c8-bfdb-d2c90210d393",
+                "m_fromNodeConnectionPointId": "1407cd12-9994-4922-813f-38b7fe823357",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "a47a9af8-495f-416e-9823-ab2f934cc5aa",
+                "m_fromNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_fromNodeConnectionPointId": "0e85e51b-b5de-48f2-b72d-22073e476a7c",
+                "m_toNodeId": "b44c4921-b77b-4e02-a47b-bbc0b16a62b3",
+                "m_toNodeConnectionPoiontId": "2c52020e-228a-45aa-8472-6d5316760851",
+                "m_label": "Texture/UI"
+            },
+            {
+                "m_id": "edc0239d-000c-4b13-90d4-9d414199e2d2",
+                "m_fromNodeId": "b44c4921-b77b-4e02-a47b-bbc0b16a62b3",
+                "m_fromNodeConnectionPointId": "75f66038-d09b-458a-b15f-7cec81729e77",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "8a699f43-33e7-4906-abbf-5396c49fdcf1",
+                "m_fromNodeId": "80cdd699-cbec-45b2-b63c-8817989dd80f",
+                "m_fromNodeConnectionPointId": "e1bf9e6a-b1cd-4495-a802-6801b7ee3718",
+                "m_toNodeId": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                "m_toNodeConnectionPoiontId": "59e6689d-98f2-492b-bb48-0c2263290f10",
+                "m_label": "+"
+            },
+            {
+                "m_id": "93eee3bc-a314-482f-87a8-ce71dff8188f",
+                "m_fromNodeId": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                "m_fromNodeConnectionPointId": "529d0ef7-899f-4858-9830-870fce5f85b2",
+                "m_toNodeId": "7bdc2965-9919-4b0b-8e07-f2db6bc77ca8",
+                "m_toNodeConnectionPoiontId": "1933f023-0f4e-426a-85a5-c8613f335272",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "6c5d2f63-77d7-40ad-9832-333cc1624eae",
+                "m_fromNodeId": "c9a01cff-df8c-4922-9c06-bddf9cdea06a",
+                "m_fromNodeConnectionPointId": "133c489b-fd58-417b-bd49-019e78d8418a",
+                "m_toNodeId": "7f006c3b-8b98-442f-ab1b-fa07056029bd",
+                "m_toNodeConnectionPoiontId": "749e53c8-d420-4547-ae41-24050da43661",
+                "m_label": "Texture/UI"
+            },
+            {
+                "m_id": "165eada3-2a8d-4963-b118-6b86698528d0",
+                "m_fromNodeId": "7bdc2965-9919-4b0b-8e07-f2db6bc77ca8",
+                "m_fromNodeConnectionPointId": "43d7b53e-8d0f-46ec-823e-285047612fa5",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "03d54b41-69e1-4dd4-851b-be684b29ea09",
+                "m_fromNodeId": "7f006c3b-8b98-442f-ab1b-fa07056029bd",
+                "m_fromNodeConnectionPointId": "673b1f2a-6fd6-4b2b-a546-282a5d9e13fe",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "cf15b2a6-2912-4f1e-bcd3-a10be65e7d15",
+                "m_fromNodeId": "1dd639b3-f872-4523-a101-a6fbebc7d464",
+                "m_fromNodeConnectionPointId": "00614f2d-6d6c-48fb-82f2-dc924331c685",
+                "m_toNodeId": "ebaec222-cbee-48f4-a163-cc3bf089ed79",
+                "m_toNodeConnectionPoiontId": "7d811841-9abf-4761-b4f8-a45a53729457",
+                "m_label": "Fonts"
+            },
+            {
+                "m_id": "0bd7af6d-7f6c-4358-a4e5-48ea4ec042d9",
+                "m_fromNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_fromNodeConnectionPointId": "8a1058d5-d3d3-47e4-8d04-52d68f99ce4a",
+                "m_toNodeId": "3db573ad-81ad-46eb-b23c-4fcdc318e362",
+                "m_toNodeConnectionPoiontId": "74dbbdc4-fb63-4d4a-aa98-1714e84043a8",
+                "m_label": "Audio[Audio]"
+            },
+            {
+                "m_id": "6234bf40-b4be-4285-93d2-a675c3ec22a1",
+                "m_fromNodeId": "3db573ad-81ad-46eb-b23c-4fcdc318e362",
+                "m_fromNodeConnectionPointId": "51868a37-aa93-42f2-8f4a-22557330f24d",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "ba97fe44-b55b-406b-868a-fb8928cef067",
+                "m_fromNodeId": "bba75fa5-7a92-42df-af04-29ecf9a669b7",
+                "m_fromNodeConnectionPointId": "01d54923-25fe-4162-90d5-c6f113c60053",
+                "m_toNodeId": "0246a965-3ebf-4a13-83c9-2bb94e3e022a",
+                "m_toNodeConnectionPoiontId": "2e371c0b-9452-44f7-94a5-37a458f307d6",
+                "m_label": "+"
+            },
+            {
+                "m_id": "0e370eb2-bb8b-499b-a874-19a55ad9681a",
+                "m_fromNodeId": "d0ef43c5-877a-4f7c-938f-77252e0e4ae8",
+                "m_fromNodeConnectionPointId": "9fb9c75d-41e8-41dc-bb88-df5005619b8b",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "4544f0df-b780-4b54-adf2-eed5c240d7af",
+                "m_fromNodeId": "0246a965-3ebf-4a13-83c9-2bb94e3e022a",
+                "m_fromNodeConnectionPointId": "339e5b6d-c426-4996-975e-5e81d0809d92",
+                "m_toNodeId": "79514fd4-ef7a-43a3-8039-78ccbc0c0d11",
+                "m_toNodeConnectionPoiontId": "6d96f3c3-3df5-4552-91a1-21762bab9d82",
+                "m_label": "Production[Scene]"
+            },
+            {
+                "m_id": "8809962f-195b-40b0-a185-e36400cd875c",
+                "m_fromNodeId": "79514fd4-ef7a-43a3-8039-78ccbc0c0d11",
+                "m_fromNodeConnectionPointId": "97f37a6b-e5fe-4a58-8de0-8567ca5c6b5d",
+                "m_toNodeId": "d0ef43c5-877a-4f7c-938f-77252e0e4ae8",
+                "m_toNodeConnectionPoiontId": "062c54b9-12b1-4210-88b5-184382756ccc",
+                "m_label": "+"
+            },
+            {
+                "m_id": "c8f2f711-a3ae-44b2-8e44-950754f307e1",
+                "m_fromNodeId": "19ced9d2-afd5-40e8-9162-bc3f870632b6",
+                "m_fromNodeConnectionPointId": "11b8a3d5-e6be-430a-84a4-a069f64cf771",
+                "m_toNodeId": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                "m_toNodeConnectionPoiontId": "215e81c3-f60e-4d8d-a740-fcdd260af1d3",
+                "m_label": "+"
+            },
+            {
+                "m_id": "02228608-4256-440e-8cd1-bb286a0f9ef0",
+                "m_fromNodeId": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                "m_fromNodeConnectionPointId": "4347a177-f790-4071-8502-992ac14477b8",
+                "m_toNodeId": "7670a748-5309-46a0-bc22-d6379c596d45",
+                "m_toNodeConnectionPoiontId": "c7c82ade-4d6f-4167-a416-8fcf6d140b53",
+                "m_label": "Texture/UI[Texture]"
+            },
+            {
+                "m_id": "f9409dcf-1c3b-4ad0-b706-b296a58c5055",
+                "m_fromNodeId": "2dc52455-357d-43b6-aa95-6ecda6885289",
+                "m_fromNodeConnectionPointId": "35a4156c-78bd-460b-a902-f10e18851002",
+                "m_toNodeId": "33ab918c-8a6c-4203-8904-776982a26b99",
+                "m_toNodeConnectionPoiontId": "4d949ee3-7aac-4d2b-bf34-f204cd7cf65f",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "212f889c-ee91-4421-91a5-22d313d9fe65",
+                "m_fromNodeId": "7670a748-5309-46a0-bc22-d6379c596d45",
+                "m_fromNodeConnectionPointId": "4419818b-866e-44c3-871e-8bc86eaf13e3",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "f9075d3c-48b5-4037-a034-f3059aec96c9",
+                "m_fromNodeId": "33ab918c-8a6c-4203-8904-776982a26b99",
+                "m_fromNodeConnectionPointId": "f5c7a4c1-9931-41a7-9c9b-a4854a8b13cf",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "16a3eeb4-32e5-411d-9a6a-221dfe860738",
+                "m_fromNodeId": "4a37b07c-d257-4d0b-9a30-d294cde300cd",
+                "m_fromNodeConnectionPointId": "88237a95-422e-4834-a334-9f3fc3cfdc38",
+                "m_toNodeId": "67674c0e-8a61-4770-8b0a-f3427e74c3df",
+                "m_toNodeConnectionPoiontId": "ea5fe0c6-b359-4e82-b555-0eea5d4e6b8d",
+                "m_label": "Fonts"
+            },
+            {
+                "m_id": "90b41148-d4be-4cf0-9d71-9686ae5fbab0",
+                "m_fromNodeId": "67674c0e-8a61-4770-8b0a-f3427e74c3df",
+                "m_fromNodeConnectionPointId": "d41cbb82-dd50-4bbf-943f-b382c50db790",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "08431f82-68d8-4ddf-a8b7-447d668e835a",
+                "m_fromNodeId": "668000d4-a404-4e88-9ae6-a7f2d85828db",
+                "m_fromNodeConnectionPointId": "7358d463-312e-409a-9beb-7093fd9af559",
+                "m_toNodeId": "d63d9797-9d8a-47ec-b51c-508233272a8a",
+                "m_toNodeConnectionPoiontId": "e6582b5e-042b-4a67-a99a-209f862e1ad8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "c2d0b0fd-4c1c-46cb-b6b3-a297f2e4029a",
+                "m_fromNodeId": "d63d9797-9d8a-47ec-b51c-508233272a8a",
+                "m_fromNodeConnectionPointId": "fe76b7ee-7ad0-4cbd-9e4c-e96530605a10",
+                "m_toNodeId": "f426f905-9598-45b2-801b-75e8ed7ff05f",
+                "m_toNodeConnectionPoiontId": "2f6a5db5-fcb8-4d23-9364-8834e63d4c85",
+                "m_label": "[Shader]"
+            },
+            {
+                "m_id": "2d5f738b-4f4a-466c-ab24-b750e88be7cb",
+                "m_fromNodeId": "f426f905-9598-45b2-801b-75e8ed7ff05f",
+                "m_fromNodeConnectionPointId": "bf62c222-cc85-4376-a388-6a4968e71eaf",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "112b13a1-d14e-48e9-83fc-f23b6917009c",
+                "m_fromNodeId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                "m_fromNodeConnectionPointId": "51899739-54db-41fa-bcc0-72abbe3be8a2",
+                "m_toNodeId": "3d32c240-664e-46d5-9dfc-de69eca34082",
+                "m_toNodeConnectionPoiontId": "48b08058-7d36-4ed4-a1f0-2db17977cfd7",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "f6fc4c57-6b8b-4597-b2e2-f240621eb1b3",
+                "m_fromNodeId": "0df3dcd1-d961-44e1-b681-89721d91a9e4",
+                "m_fromNodeConnectionPointId": "e849af47-92f9-4643-84c9-2b63997ba3d3",
+                "m_toNodeId": "c8d02940-a34c-4891-a5f3-27a14163e287",
+                "m_toNodeConnectionPoiontId": "2db36310-caa2-484f-b497-5b5b09752556",
+                "m_label": "Effect"
+            },
+            {
+                "m_id": "f02d1bae-cbfa-4a33-ac18-3feb662ccab8",
+                "m_fromNodeId": "c8d02940-a34c-4891-a5f3-27a14163e287",
+                "m_fromNodeConnectionPointId": "29ac84f6-4a62-43e8-92c2-89f4dbe8567e",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "8f0806d1-3216-4f58-bc94-e0e88cdc97c7",
+                "m_fromNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_fromNodeConnectionPointId": "46d16479-570b-46cc-8c85-035b54d1ca77",
+                "m_toNodeId": "ae767f7f-52fb-440e-bf5e-7beb0064d49c",
+                "m_toNodeConnectionPoiontId": "6c378357-43f3-4477-9ae4-81b179a1f949",
+                "m_label": "Materials"
+            },
+            {
+                "m_id": "02fd7f58-e83b-4547-8cf2-cb8c70b172e6",
+                "m_fromNodeId": "ae767f7f-52fb-440e-bf5e-7beb0064d49c",
+                "m_fromNodeConnectionPointId": "568728fe-10b2-4708-9d86-6484ba30cdba",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "fef8feda-9c10-4ec7-851e-1ca2c59fc653",
+                "m_fromNodeId": "eed846e9-7b80-45ad-985d-606c2eec1133",
+                "m_fromNodeConnectionPointId": "caacf224-5446-49c2-bc44-02f858ec6c6d",
+                "m_toNodeId": "db72d6af-5b8c-4a26-99cc-c427e595a9f6",
+                "m_toNodeConnectionPoiontId": "bdf4443b-3d42-4a27-8e44-e23f74314a38",
+                "m_label": "+"
+            },
+            {
+                "m_id": "71183554-42b0-469e-8093-f159d9e19caf",
+                "m_fromNodeId": "db72d6af-5b8c-4a26-99cc-c427e595a9f6",
+                "m_fromNodeConnectionPointId": "f570f59e-a2b6-40fa-9b3a-47ee2f7db909",
+                "m_toNodeId": "8684d048-0c3b-47f7-891c-3feec41be40e",
+                "m_toNodeConnectionPoiontId": "d8b7932f-95f3-4f7f-8b91-652f98d0c998",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "f80fe286-6a13-4726-9814-f51c1dd0b31d",
+                "m_fromNodeId": "8684d048-0c3b-47f7-891c-3feec41be40e",
+                "m_fromNodeConnectionPointId": "ff711999-33a3-473a-9866-793918021c7f",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "91a1e1f2-517a-4215-b6b8-80dcd93cc95b",
+                "m_fromNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_fromNodeConnectionPointId": "c3b5e58d-1e89-4147-b714-264b25c4b8d8",
+                "m_toNodeId": "db9794e7-9e0e-485e-b7e3-2aa084deab0b",
+                "m_toNodeConnectionPoiontId": "790c7e25-9e67-4ea9-9920-9b89e21fa660",
+                "m_label": "Texture/BG"
+            },
+            {
+                "m_id": "9d23003b-a55f-4f5a-b9e7-909afc9033ec",
+                "m_fromNodeId": "db9794e7-9e0e-485e-b7e3-2aa084deab0b",
+                "m_fromNodeConnectionPointId": "61543c0b-a62a-4278-a84b-7b71c09b7883",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "16968cc6-bf04-4d63-85f8-5620bcfe5c4a",
+                "m_fromNodeId": "1ee87320-d1df-435e-b71d-d0e8801579ec",
+                "m_fromNodeConnectionPointId": "9a181f6d-16c0-4ba4-87e6-4c1b18572dff",
+                "m_toNodeId": "969ddd17-198c-4983-8421-cc41e710de5d",
+                "m_toNodeConnectionPoiontId": "40cfc976-846c-4f8b-9dc6-f21ea077006d",
+                "m_label": "Animations"
+            },
+            {
+                "m_id": "e6d9d381-eb24-4e9a-8e39-e63435fa34d3",
+                "m_fromNodeId": "969ddd17-198c-4983-8421-cc41e710de5d",
+                "m_fromNodeConnectionPointId": "92b36f6e-f6fe-4870-ac20-29b004b08422",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "fcb38d94-2124-41f2-8c82-ca3f82c22de7",
+                "m_fromNodeId": "dad2f9f4-e53f-43fb-a838-02681a6495c7",
+                "m_fromNodeConnectionPointId": "539ea49f-1573-4503-bef7-6e958ef6f098",
+                "m_toNodeId": "be63e7bd-6e0e-4ae1-9d6b-a3d4fd0d0339",
+                "m_toNodeConnectionPoiontId": "78e5a07a-a939-4de1-b301-392bf9d41055",
+                "m_label": "+"
+            },
+            {
+                "m_id": "39e8c3b6-b12b-461e-8397-dec962863a5f",
+                "m_fromNodeId": "be63e7bd-6e0e-4ae1-9d6b-a3d4fd0d0339",
+                "m_fromNodeConnectionPointId": "7afdceed-74b0-4720-8e24-268f3e3a2654",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "9df4d1f8-ae57-45eb-a6d2-8b7265ef3d02",
+                "m_fromNodeId": "3f52d473-8e2d-4514-a5fb-f72ef5c5918b",
+                "m_fromNodeConnectionPointId": "f1b99850-5709-42fb-a721-208617257544",
+                "m_toNodeId": "1e113677-8723-47e2-9a94-264c048ccf46",
+                "m_toNodeConnectionPoiontId": "cd4dd0d2-ab2f-4890-b3d1-fa9870137c2f",
+                "m_label": "+"
+            },
+            {
+                "m_id": "7b1f99fb-f8ab-426a-ba4a-9e150f6786e1",
+                "m_fromNodeId": "1e113677-8723-47e2-9a94-264c048ccf46",
+                "m_fromNodeConnectionPointId": "38cf81ca-d696-42fa-974f-ef5dfc023a33",
+                "m_toNodeId": "bb564002-33dc-47ec-b24b-1acfd11cabaf",
+                "m_toNodeConnectionPoiontId": "7572a6fd-547c-4626-b94a-47e2e25402e0",
+                "m_label": "Prefabs"
+            },
+            {
+                "m_id": "8b07d564-c68b-40c8-9b7c-489a833bf2e4",
+                "m_fromNodeId": "1e113677-8723-47e2-9a94-264c048ccf46",
+                "m_fromNodeConnectionPointId": "7e0159fd-edc7-41b5-9fe6-efd291778c6c",
+                "m_toNodeId": "6dceca36-a542-4a16-a703-0cada76c9b6c",
+                "m_toNodeConnectionPoiontId": "c9c0157a-12e2-4f77-9824-917597b1a354",
+                "m_label": "Texture/UI"
+            },
+            {
+                "m_id": "6466fc6f-1ccc-40fa-9393-537d7866febe",
+                "m_fromNodeId": "bb564002-33dc-47ec-b24b-1acfd11cabaf",
+                "m_fromNodeConnectionPointId": "70326df1-8993-4a39-a67c-8196879635a2",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            },
+            {
+                "m_id": "89cc713c-81d5-4fac-b1c7-6b6e0241c275",
+                "m_fromNodeId": "6dceca36-a542-4a16-a703-0cada76c9b6c",
+                "m_fromNodeConnectionPointId": "a2231d19-46aa-4fdc-bba0-535fb3af31c9",
+                "m_toNodeId": "86b5b299-5a46-4cc4-a35a-806da79dc7b7",
+                "m_toNodeConnectionPoiontId": "7876e4b4-2e35-424c-ba1b-f5ae1aaa09a8",
+                "m_label": "+"
+            }
+        ],
+        "m_lastModified": "132366845341162002",
+        "m_version": 2,
+        "m_graphDescription": "",
+        "m_useAsAssetPostprocessor": false,
+        "m_graphExecOrderPriority": 0
+    }
+}
