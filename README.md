@@ -1,6 +1,12 @@
-# 🃏 德州扑克完整运营级源码 |德州扑克源码 | 德州撲克源碼 | Texas Hold'em Poker Complete Solution | Texas Hold'em Poker Complete Source Code
-**德州扑克源码** · **德州扑克完整解决方案** · **德州源码** · **德州扑克游戏源码**  
-**Multiplayer Online Poker | Club + Agent System | Unity + C++ | Demo Available**
+# 德州扑克源码 | 德州扑克完整解决方案 | Texas Hold'em Poker Complete Source Code
+
+**德州扑克源码** · **德州扑克游戏源码** · **德州金币大厅源码** · **德州俱乐部源码**  
+**Unity + C++ 高并发 | 俱乐部 + 代理联盟 + MTT/SNG | 支持 iOS/Android/H5 | 线上稳定运营多年**
+**Multiplayer Online Poker | Club + Agent System | Unity + C++ | Demo Available*
+一款经过实际运营验证的**德州扑克完整解决方案源码**。支持金币大厅、俱乐部系统、多种玩法（经典德州、短牌等）、MTT/SNG锦标赛、商城、充值、排行榜等全套功能。可直接用于二次开发或商用平台搭建。
+
+[立即联系获取在线演示、完整源码与商用授权](#联系我们)
+
 > **线上稳定运营多年 | 俱乐部+联盟+私人局 | 10+种玩法 | 刚停服，全套源码**
 💡 Build your own poker platform in minutes  
 💡 快速搭建属于你的德州扑克平台  
@@ -94,16 +100,13 @@
 📱 **Telegram：@xuzongbin001**  
 📧 **Email：masterai918@gmail.com**
 
-👉 **联系我获取演示视频 + 详细报价**
-## 🎥 产品演示视频 / Product Demo Video
+## 🚀 产品演示视频（强烈推荐观看）
 
-[![德州扑克完整功能演示](https://img.youtube.com/vi/adHRqfHmj0Q/maxresdefault.jpg)](https://www.youtube.com/shorts/adHRqfHmj0Q)
+[![德州扑克完整功能演示](https://img.youtube.com/vi/iuFM8RJGU8s/hqdefault.jpg)](https://youtu.be/iuFM8RJGU8s)
 
-**点击上方图片即可跳转观看视频**  
-德州扑克完整功能演示 | 金币大厅 + 俱乐部系统 + MTT锦标赛 + 短牌玩法
-## 🎮 Demo | 演示 | 演示
-
-See real gameplay below 👇  
+**点击上方图片跳转观看视频**  
+德州扑克完整功能演示 | 金币大厅 + 俱乐部系统 + MTT锦标赛 + 实时对战
+  
 ## 📸 游戏真实截图 / Screenshots
 
 ![创建俱乐部](Screenshots/创建俱乐部.jpg)  
