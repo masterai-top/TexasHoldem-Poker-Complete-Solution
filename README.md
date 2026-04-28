@@ -92,9 +92,9 @@
 📱 **Telegram：@xuzongbin001**  
 📧 **Email：masterai918@gmail.com**
 
-## 🚀 产品演示视频（强烈推荐观看）
+## 🚀 产品演示视频（强烈推荐观看）  
 
-[![德州扑克完整功能演示](https://img.youtube.com/vi/iuFM8RJGU8s/hqdefault.jpg)](https://youtu.be/iuFM8RJGU8s)
+[![德州扑克完整功能演示](https://img.youtube.com/vi/adHRqfHmj0Q/hqdefault.jpg)](https://youtu.be/adHRqfHmj0Q)
 
 **点击上方图片跳转观看视频**  
 德州扑克完整功能演示 | 金币大厅 + 俱乐部系统 + MTT锦标赛 + 实时对战
