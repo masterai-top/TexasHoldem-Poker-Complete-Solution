@@ -72,14 +72,6 @@
 - 🔧 Customizable（可二次开发）  
 
 
-## 📂 代码结构
-**├── gameserver.cpp/h # 游戏服务器主逻辑**
-**├── gameroot.cpp/h # 游戏房间管理**
-**├── onclientmessage.cpp/h # 客户端消息处理**
-**├── onroommessage.cpp/h # 房间消息处理**
-**├── sendclientmessage.cpp/h # 消息发送**
-**└── sendroommessage.cpp/h**
-
 
 ## 🚀 技术栈
 
@@ -106,6 +98,7 @@
 
 **点击上方图片跳转观看视频**  
 德州扑克完整功能演示 | 金币大厅 + 俱乐部系统 + MTT锦标赛 + 实时对战
+  
   
   
 ## 📸 游戏真实截图 / Screenshots
