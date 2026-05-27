@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">colisdk-android</string>
+    <string name="facebook_token" translatable="false">835a6df07f3e5c671f65843af1606607</string>
+    <string name="facebook_app_id" translatable="false">328114965853368</string>
+    <string name = "google_client_id" translatable="false">635599369280-46rhqv3v3h2sfk5k7qikafr98ca6u39d.apps.googleusercontent.com</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb328114965853368</string>
+</resources>
