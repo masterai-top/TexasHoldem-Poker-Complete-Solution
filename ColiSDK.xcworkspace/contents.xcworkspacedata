@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../iossupport/iossupport.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ColiSDK/ColiSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ColiSDK_Runner/ColiSDK_Runner.xcodeproj">
+   </FileRef>
+</Workspace>

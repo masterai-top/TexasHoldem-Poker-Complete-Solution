@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7EEF3EF2380324100D5239E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF3EE2380324100D5239E /* AppDelegate.m */; };
+		D7EEF3F22380324100D5239E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF3F12380324100D5239E /* SceneDelegate.m */; };
+		D7EEF3FA2380324300D5239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7EEF3F92380324300D5239E /* Assets.xcassets */; };
+		D7EEF4002380324300D5239E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF3FF2380324300D5239E /* main.m */; };
+		D7EEF40A2380324300D5239E /* ColiSDK_RunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF4092380324300D5239E /* ColiSDK_RunnerTests.m */; };
+		D7EEF4152380324300D5239E /* ColiSDK_RunnerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF4142380324300D5239E /* ColiSDK_RunnerUITests.m */; };
+		D7EEF45D238054D000D5239E /* GoogleAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEF45C238054D000D5239E /* GoogleAuthViewController.m */; };
+		D7EEF4612380D01100D5239E /* GoogleAuthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7EEF4602380D01100D5239E /* GoogleAuthView.xib */; };
+		D7EEF4632380D96400D5239E /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EEF4622380D96300D5239E /* LocalAuthentication.framework */; };
+		D7EEF4652380D96800D5239E /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EEF4642380D96800D5239E /* AuthenticationServices.framework */; };
+		D7EEF4672380D96C00D5239E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EEF4662380D96C00D5239E /* SafariServices.framework */; };
+		D7EEF4692380D97200D5239E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EEF4682380D97200D5239E /* SystemConfiguration.framework */; };
+		FA7F05412390CC0F00269379 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7F05402390CC0E00269379 /* AudioToolbox.framework */; };
+		FA8812C42387DD7100523158 /* ColiSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA8812C32387DD7100523158 /* ColiSDK-Info.plist */; };
+		FAA810572394A33500C91CC1 /* libiossupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA810562394A33500C91CC1 /* libiossupport.a */; };
+		FAC59CE7238E5D5C00A3AF52 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC59CE6238E5D5C00A3AF52 /* Photos.framework */; };
+		FACE69F9238411DC0035B13A /* ColiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACE69F8238411DC0035B13A /* ColiSDK.framework */; };
+		FACE69FA238412210035B13A /* ColiSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FACE69F8238411DC0035B13A /* ColiSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FACE6A00238414CB0035B13A /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACE69FF238414CB0035B13A /* PushKit.framework */; };
+		FACE6A022384D86B0035B13A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACE6A012384D86A0035B13A /* StoreKit.framework */; };
+		FACE6A0B2384E0CC0035B13A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FACE6A0A2384E0CC0035B13A /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7EEF4062380324300D5239E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7EEF3E22380324100D5239E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7EEF3E92380324100D5239E;
+			remoteInfo = ColiSDK_Runner;
+		};
+		D7EEF4112380324300D5239E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7EEF3E22380324100D5239E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7EEF3E92380324100D5239E;
+			remoteInfo = ColiSDK_Runner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7EEF4592380424600D5239E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FACE69FA238412210035B13A /* ColiSDK.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D7EEF3EA2380324100D5239E /* ColiSDKRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColiSDKRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EEF3ED2380324100D5239E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7EEF3EE2380324100D5239E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7EEF3F02380324100D5239E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D7EEF3F12380324100D5239E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D7EEF3F92380324300D5239E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7EEF3FE2380324300D5239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EEF3FF2380324300D5239E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7EEF4052380324300D5239E /* ColiSDK_RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColiSDK_RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EEF4092380324300D5239E /* ColiSDK_RunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColiSDK_RunnerTests.m; sourceTree = "<group>"; };
+		D7EEF40B2380324300D5239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EEF4102380324300D5239E /* ColiSDK_RunnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColiSDK_RunnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EEF4142380324300D5239E /* ColiSDK_RunnerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColiSDK_RunnerUITests.m; sourceTree = "<group>"; };
+		D7EEF4162380324300D5239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EEF45B238054D000D5239E /* GoogleAuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleAuthViewController.h; sourceTree = "<group>"; };
+		D7EEF45C238054D000D5239E /* GoogleAuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleAuthViewController.m; sourceTree = "<group>"; };
+		D7EEF4602380D01100D5239E /* GoogleAuthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleAuthView.xib; sourceTree = "<group>"; };
+		D7EEF4622380D96300D5239E /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		D7EEF4642380D96800D5239E /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		D7EEF4662380D96C00D5239E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		D7EEF4682380D97200D5239E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA7F05402390CC0E00269379 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FA8812C22387D74B00523158 /* ColiSDKRunnerRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColiSDKRunnerRelease.entitlements; sourceTree = "<group>"; };
+		FA8812C32387DD7100523158 /* ColiSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColiSDK-Info.plist"; sourceTree = "<group>"; };
+		FAA810532394A31B00C91CC1 /* iossupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iossupport.xcodeproj; path = ../../../iossupport/iossupport.xcodeproj; sourceTree = "<group>"; };
+		FAA810562394A33500C91CC1 /* libiossupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiossupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC59CE6238E5D5C00A3AF52 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		FACE69F8238411DC0035B13A /* ColiSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ColiSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE69FF238414CB0035B13A /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		FACE6A012384D86A0035B13A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FACE6A032384D8700035B13A /* ColiSDK_RunnerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColiSDK_RunnerDebug.entitlements; sourceTree = "<group>"; };
+		FACE6A0A2384E0CC0035B13A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7EEF3E72380324100D5239E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA810572394A33500C91CC1 /* libiossupport.a in Frameworks */,
+				FACE69F9238411DC0035B13A /* ColiSDK.framework in Frameworks */,
+				FA7F05412390CC0F00269379 /* AudioToolbox.framework in Frameworks */,
+				FAC59CE7238E5D5C00A3AF52 /* Photos.framework in Frameworks */,
+				FACE6A00238414CB0035B13A /* PushKit.framework in Frameworks */,
+				FACE6A022384D86B0035B13A /* StoreKit.framework in Frameworks */,
+				D7EEF4692380D97200D5239E /* SystemConfiguration.framework in Frameworks */,
+				D7EEF4672380D96C00D5239E /* SafariServices.framework in Frameworks */,
+				D7EEF4652380D96800D5239E /* AuthenticationServices.framework in Frameworks */,
+				D7EEF4632380D96400D5239E /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EEF4022380324300D5239E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EEF40D2380324300D5239E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7EEF3E12380324100D5239E = {
+			isa = PBXGroup;
+			children = (
+				D7EEF44C2380415300D5239E /* Frameworks */,
+				D7EEF3EC2380324100D5239E /* ColiSDK_Runner */,
+				D7EEF4082380324300D5239E /* ColiSDK_RunnerTests */,
+				D7EEF4132380324300D5239E /* ColiSDK_RunnerUITests */,
+				D7EEF3EB2380324100D5239E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7EEF3EB2380324100D5239E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7EEF3EA2380324100D5239E /* ColiSDKRunner.app */,
+				D7EEF4052380324300D5239E /* ColiSDK_RunnerTests.xctest */,
+				D7EEF4102380324300D5239E /* ColiSDK_RunnerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7EEF3EC2380324100D5239E /* ColiSDK_Runner */ = {
+			isa = PBXGroup;
+			children = (
+				FA8812C22387D74B00523158 /* ColiSDKRunnerRelease.entitlements */,
+				FACE6A0A2384E0CC0035B13A /* GoogleService-Info.plist */,
+				FACE6A032384D8700035B13A /* ColiSDK_RunnerDebug.entitlements */,
+				D7EEF3ED2380324100D5239E /* AppDelegate.h */,
+				D7EEF3EE2380324100D5239E /* AppDelegate.m */,
+				D7EEF3F02380324100D5239E /* SceneDelegate.h */,
+				D7EEF3F12380324100D5239E /* SceneDelegate.m */,
+				D7EEF3F92380324300D5239E /* Assets.xcassets */,
+				D7EEF3FE2380324300D5239E /* Info.plist */,
+				D7EEF3FF2380324300D5239E /* main.m */,
+				D7EEF45B238054D000D5239E /* GoogleAuthViewController.h */,
+				D7EEF45C238054D000D5239E /* GoogleAuthViewController.m */,
+				D7EEF4602380D01100D5239E /* GoogleAuthView.xib */,
+				FA8812C32387DD7100523158 /* ColiSDK-Info.plist */,
+			);
+			path = ColiSDK_Runner;
+			sourceTree = "<group>";
+		};
+		D7EEF4082380324300D5239E /* ColiSDK_RunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7EEF4092380324300D5239E /* ColiSDK_RunnerTests.m */,
+				D7EEF40B2380324300D5239E /* Info.plist */,
+			);
+			path = ColiSDK_RunnerTests;
+			sourceTree = "<group>";
+		};
+		D7EEF4132380324300D5239E /* ColiSDK_RunnerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7EEF4142380324300D5239E /* ColiSDK_RunnerUITests.m */,
+				D7EEF4162380324300D5239E /* Info.plist */,
+			);
+			path = ColiSDK_RunnerUITests;
+			sourceTree = "<group>";
+		};
+		D7EEF44C2380415300D5239E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAA810562394A33500C91CC1 /* libiossupport.a */,
+				FAA810532394A31B00C91CC1 /* iossupport.xcodeproj */,
+				FA7F05402390CC0E00269379 /* AudioToolbox.framework */,
+				FAC59CE6238E5D5C00A3AF52 /* Photos.framework */,
+				FACE6A012384D86A0035B13A /* StoreKit.framework */,
+				FACE69FF238414CB0035B13A /* PushKit.framework */,
+				FACE69F8238411DC0035B13A /* ColiSDK.framework */,
+				D7EEF4682380D97200D5239E /* SystemConfiguration.framework */,
+				D7EEF4662380D96C00D5239E /* SafariServices.framework */,
+				D7EEF4642380D96800D5239E /* AuthenticationServices.framework */,
+				D7EEF4622380D96300D5239E /* LocalAuthentication.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA810542394A31B00C91CC1 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7EEF3E92380324100D5239E /* ColiSDK_Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7EEF4192380324300D5239E /* Build configuration list for PBXNativeTarget "ColiSDK_Runner" */;
+			buildPhases = (
+				D7EEF3E62380324100D5239E /* Sources */,
+				D7EEF3E72380324100D5239E /* Frameworks */,
+				D7EEF3E82380324100D5239E /* Resources */,
+				D7EEF4592380424600D5239E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColiSDK_Runner;
+			productName = ColiSDK_Runner;
+			productReference = D7EEF3EA2380324100D5239E /* ColiSDKRunner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7EEF4042380324300D5239E /* ColiSDK_RunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7EEF41C2380324300D5239E /* Build configuration list for PBXNativeTarget "ColiSDK_RunnerTests" */;
+			buildPhases = (
+				D7EEF4012380324300D5239E /* Sources */,
+				D7EEF4022380324300D5239E /* Frameworks */,
+				D7EEF4032380324300D5239E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7EEF4072380324300D5239E /* PBXTargetDependency */,
+			);
+			name = ColiSDK_RunnerTests;
+			productName = ColiSDK_RunnerTests;
+			productReference = D7EEF4052380324300D5239E /* ColiSDK_RunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7EEF40F2380324300D5239E /* ColiSDK_RunnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7EEF41F2380324300D5239E /* Build configuration list for PBXNativeTarget "ColiSDK_RunnerUITests" */;
+			buildPhases = (
+				D7EEF40C2380324300D5239E /* Sources */,
+				D7EEF40D2380324300D5239E /* Frameworks */,
+				D7EEF40E2380324300D5239E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7EEF4122380324300D5239E /* PBXTargetDependency */,
+			);
+			name = ColiSDK_RunnerUITests;
+			productName = ColiSDK_RunnerUITests;
+			productReference = D7EEF4102380324300D5239E /* ColiSDK_RunnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7EEF3E22380324100D5239E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "林观鸿";
+				TargetAttributes = {
+					D7EEF3E92380324100D5239E = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					D7EEF4042380324300D5239E = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = D7EEF3E92380324100D5239E;
+					};
+					D7EEF40F2380324300D5239E = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = D7EEF3E92380324100D5239E;
+					};
+				};
+			};
+			buildConfigurationList = D7EEF3E52380324100D5239E /* Build configuration list for PBXProject "ColiSDK_Runner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7EEF3E12380324100D5239E;
+			productRefGroup = D7EEF3EB2380324100D5239E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FAA810542394A31B00C91CC1 /* Products */;
+					ProjectRef = FAA810532394A31B00C91CC1 /* iossupport.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D7EEF3E92380324100D5239E /* ColiSDK_Runner */,
+				D7EEF4042380324300D5239E /* ColiSDK_RunnerTests */,
+				D7EEF40F2380324300D5239E /* ColiSDK_RunnerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7EEF3E82380324100D5239E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EEF4612380D01100D5239E /* GoogleAuthView.xib in Resources */,
+				D7EEF3FA2380324300D5239E /* Assets.xcassets in Resources */,
+				FA8812C42387DD7100523158 /* ColiSDK-Info.plist in Resources */,
+				FACE6A0B2384E0CC0035B13A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EEF4032380324300D5239E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EEF40E2380324300D5239E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7EEF3E62380324100D5239E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EEF45D238054D000D5239E /* GoogleAuthViewController.m in Sources */,
+				D7EEF3EF2380324100D5239E /* AppDelegate.m in Sources */,
+				D7EEF4002380324300D5239E /* main.m in Sources */,
+				D7EEF3F22380324100D5239E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EEF4012380324300D5239E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EEF40A2380324300D5239E /* ColiSDK_RunnerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7EEF40C2380324300D5239E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EEF4152380324300D5239E /* ColiSDK_RunnerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7EEF4072380324300D5239E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7EEF3E92380324100D5239E /* ColiSDK_Runner */;
+			targetProxy = D7EEF4062380324300D5239E /* PBXContainerItemProxy */;
+		};
+		D7EEF4122380324300D5239E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7EEF3E92380324100D5239E /* ColiSDK_Runner */;
+			targetProxy = D7EEF4112380324300D5239E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D7EEF4172380324300D5239E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7EEF4182380324300D5239E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7EEF41A2380324300D5239E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColiSDK_Runner/ColiSDK_RunnerDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6FX2GATHF3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ColiSDK_Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.wonderpoker.new;
+				PRODUCT_NAME = ColiSDKRunner;
+				PROVISIONING_PROFILE_SPECIFIER = master_dzproj_dev;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../iossupport/iossupport\"";
+			};
+			name = Debug;
+		};
+		D7EEF41B2380324300D5239E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColiSDK_Runner/ColiSDKRunnerRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6FX2GATHF3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ColiSDK_Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.wonderpoker.new;
+				PRODUCT_NAME = ColiSDKRunner;
+				PROVISIONING_PROFILE_SPECIFIER = master_dzproj_dev;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../iossupport/iossupport\"";
+			};
+			name = Release;
+		};
+		D7EEF41D2380324300D5239E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColiSDK_RunnerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coli.ColiSDK-RunnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColiSDK_Runner.app/ColiSDK_Runner";
+			};
+			name = Debug;
+		};
+		D7EEF41E2380324300D5239E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColiSDK_RunnerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coli.ColiSDK-RunnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColiSDK_Runner.app/ColiSDK_Runner";
+			};
+			name = Release;
+		};
+		D7EEF4202380324300D5239E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColiSDK_RunnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coli.ColiSDK-RunnerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColiSDK_Runner;
+			};
+			name = Debug;
+		};
+		D7EEF4212380324300D5239E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColiSDK_RunnerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coli.ColiSDK-RunnerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColiSDK_Runner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7EEF3E52380324100D5239E /* Build configuration list for PBXProject "ColiSDK_Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EEF4172380324300D5239E /* Debug */,
+				D7EEF4182380324300D5239E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7EEF4192380324300D5239E /* Build configuration list for PBXNativeTarget "ColiSDK_Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EEF41A2380324300D5239E /* Debug */,
+				D7EEF41B2380324300D5239E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7EEF41C2380324300D5239E /* Build configuration list for PBXNativeTarget "ColiSDK_RunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EEF41D2380324300D5239E /* Debug */,
+				D7EEF41E2380324300D5239E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7EEF41F2380324300D5239E /* Build configuration list for PBXNativeTarget "ColiSDK_RunnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EEF4202380324300D5239E /* Debug */,
+				D7EEF4212380324300D5239E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7EEF3E22380324100D5239E /* Project object */;
+}
