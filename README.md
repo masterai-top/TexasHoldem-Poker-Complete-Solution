@@ -1,42 +1,5 @@
 # Texas Hold'em Poker Complete Solution
-
-德州扑克完整平台解决方案，包含 Unity 客户端、C++ 高性能游戏服务端、俱乐部系统、代理体系、MTT/SNG 锦标赛、MySQL/Redis 数据服务，以及部署和二次开发文档。
-
-> Complete Texas Hold'em poker platform with Unity client, C++ game server, club and agent systems, MTT/SNG tournaments, MySQL and Redis.
-
-[![License](https://img.shields.io/github/license/masterai-top/TexasHoldem-Poker-Complete-Solution)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/masterai-top/TexasHoldem-Poker-Complete-Solution?style=social)](https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/masterai-top/TexasHoldem-Poker-Complete-Solution)](https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution/commits/main)
-[![Issues](https://img.shields.io/github/issues/masterai-top/TexasHoldem-Poker-Complete-Solution)](https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution/issues)
-
-## 30 秒了解项目
-
-这是一个面向多人实时德州扑克场景的完整源码解决方案，适合用于技术评估、客户端/服务端二次开发、私有化部署和商业合作评估。
-
-项目重点：
-
-- Unity 客户端，面向 iOS、Android，可扩展 H5/其他客户端。
-- C++ 游戏服务端，面向实时对局和高并发连接。
-- 经典德州、短牌、AOF、奥马哈、大菠萝、MTT、SNG 等玩法模块。
-- 俱乐部、联盟、朋友局/私人局、代理体系、商城、充值、排行榜、战绩等业务模块。
-- MySQL 持久化、Redis 缓存，支持独立节点和水平扩展。
-
-## 快速入口
-
-| 需求 | 入口 |
-| --- | --- |
-| 下载已打包版本 | [Latest Release](../../releases/latest) |
-| 查看安装包和校验值 | [Release Assets](../../releases) |
-| 查看部署步骤 | [Deployment Guide](docs/deployment.md) |
-| 查看项目截图 | [Screenshots](Screenshots) |
-| 查看客户端代码 | [Android SDK/client](Android%20SDK/client) / `ColiSDK_Runner` |
-| 查看服务端代码 | `gameserver.cpp`、`GMServer.cpp`、`DBOperator.cpp` |
-| 报告问题 | [Issues](../../issues/new/choose) |
-| 商业合作/演示 | Telegram：`<TELEGRAM_USERNAME>`，Email：`<CONTACT_EMAIL>` |
-
-
-
-# 德州源码|德州扑克源码 |德州朋友局|德州私人局|德州游戏源码|德州俱乐部| 德州扑克完整解决方案 | Texas Hold'em Poker Complete Source Code
+德州源码|德州扑克源码 |德州朋友局|德州私人局|德州游戏源码|德州俱乐部| 德州扑克完整解决方案 | Texas Hold'em Poker Complete Source Code
 
 **德州扑克源码** · **德州扑克游戏源码** · **德州金币大厅源码** · **德州俱乐部源码**  
 **Unity + C++ 高并发 | 俱乐部 + 代理联盟 + MTT/SNG | 支持 iOS/Android/H5 | 线上稳定运营多年**
