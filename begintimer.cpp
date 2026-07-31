@@ -15,6 +15,8 @@ namespace game
             {
                 __TRY__
 
+                DLOG_TRACE("roomid:" << root->roomid() << ", " << "@BeginTimer, time key: " << xtimekey << ", time: " << time << ", roomid:" << root->roomid());
+
                 Aggr::getInstance()->kill(root->roomid(), xtimekey);
                 Aggr::getInstance()->addXid(root->roomid(), xtimekey, SetSoTimer<std::tuple<GameRoot *>>(make_tuple(root), func, xtimekey, time, 0));
 

@@ -8,9 +8,7 @@ namespace game
     {
         namespace gamelogic
         {
-            void GameEnd(GameRoot *root);
-            int sendGameFinish2Room(GameRoot *root);
-            int calWinScore(GameRoot *root);
+            void SendAction(GameRoot *root, int opType);
         }
     }
 }

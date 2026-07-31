@@ -10,7 +10,8 @@ namespace game
     {
         namespace gamelogic
         {
-            int CheckBegin(GameRoot *root);
+            int LeaveDesk(GameRoot *root, bool bTimeOut = false);
+            int RemoveUser(GameRoot *root, std::vector<long> vdelUser);
         }
     }
 }

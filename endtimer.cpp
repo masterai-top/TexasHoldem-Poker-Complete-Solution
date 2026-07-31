@@ -17,6 +17,8 @@ namespace game
             {
                 __TRY__
 
+                DLOG_TRACE("roomid:" << root->roomid() << ", " << "@EndTimer, timekey: " << xtimekey << ", time: " << time << ", roomid:" << root->roomid());
+
                 //
                 if (xtimekey == NN_XTIME_KILL_ALL)
                 {
