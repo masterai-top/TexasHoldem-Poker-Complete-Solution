@@ -1,12 +1,11 @@
 # Texas Hold'em Poker Complete Solution
 德州源码|德州扑克源码 |德州朋友局|德州私人局|德州游戏源码|德州俱乐部| 德州扑克完整解决方案 | Texas Hold'em Poker Complete Source Code
 
-**德州扑克源码** · **德州扑克游戏源码** · **德州金币大厅源码** · **德州俱乐部源码**  
 **Unity + C++ 高并发 | 俱乐部 + 代理联盟 + MTT/SNG | 支持 iOS/Android/H5 | 线上稳定运营多年**
 **Multiplayer Online Poker | Club + Agent System | Unity + C++ | Demo Available*
-一款经过实际运营验证的**德州扑克完整解决方案源码**。支持金币大厅、俱乐部系统、多种玩法（经典德州、短牌等）、MTT/SNG锦标赛、商城、充值、排行榜等全套功能。可直接用于二次开发或商用平台搭建。
+一款经过实际运营验证的**德州扑克完整解决方案源码**。支持金币大厅、俱乐部系统、多种玩法（经典德州、短牌等）、MTT/SNG锦标赛、商城、充值、排行榜等全套功能。可直接用于二次开发搭建。
 
-[立即联系获取在线演示、完整源码与商用授权](#联系我们)
+
 
 > **线上稳定运营多年 | 俱乐部+联盟+私人局 | 10+种玩法 | 刚停服，全套源码**
 💡 Build your own poker platform in minutes  
@@ -80,25 +79,13 @@
 - **服务端**：C++ - 高性能稳定运行
 - **数据库**：MySQL + Redis
 
-## 📦 交付内容
 
-- 完整服务端源码 (C++)
-- 完整客户端源码 (Unity)
-- 数据库脚本
-- 部署文档
-- 美术资源包
-
-## 💰 获取完整源码
+###  💰问题反馈与交流
+仅限学术与技术交流
 
 📱 **Telegram：@xuzongbin001**  
 📧 **Email：masterai918@gmail.com**
 
-## 🚀 产品演示视频（强烈推荐观看）  
-
-[![德州扑克完整功能演示](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)](https://youtu.be/job2jRcSnl4?si=p3AjN6trak3jStfc)
-
-**点击上方图片跳转观看视频**  
-德州扑克完整功能演示 | 金币大厅 + 俱乐部系统 + MTT锦标赛 + 实时对战
   
   
   
