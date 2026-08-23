@@ -1,0 +1,49 @@
+
+---
+
+# 3. `poker-game-server.md`
+
+```markdown
+# Poker Game Server | C++ Poker Game Server
+
+## Overview
+
+A real-time multiplayer poker game requires a reliable game server to manage
+players, rooms, game states and settlements.
+
+The TexasHoldem-Poker-Complete-Solution project uses C++ as an important part
+of the game server architecture.
+
+## Server Responsibilities
+
+The poker game server can be responsible for:
+
+- Player connections
+- Room management
+- Game lifecycle
+- Player actions
+- Betting state
+- Pot calculation
+- Game settlement
+- Room synchronization
+- Reconnection
+- Player status
+
+## Server Architecture
+
+```text
+Unity Client
+     │
+     │ Network
+     ▼
+C++ Game Server
+     │
+     ├── Connection Manager
+     ├── Room Manager
+     ├── Game Engine
+     ├── Player Manager
+     ├── Settlement
+     └── Message System
+              │
+              ▼
+       MySQL / Redis
