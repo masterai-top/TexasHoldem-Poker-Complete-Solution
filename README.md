@@ -102,17 +102,6 @@ markdown
 ⭐ 如果该项目对您有参考价值，欢迎 Star 关注后续更新！
 
 
----
-
-
-
----
-
-## ✅ 加徽章（信任提升）
-
-```markdown
-![Stars](https://img.shields.io/github/stars/masterai-top/Texas-game-source-code?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/masterai-top/Texas-game-source-code)
 
 
 
