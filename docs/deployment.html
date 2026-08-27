@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>德州扑克源码部署与验收 | Unity 和 C++ 项目清单</title>
+  <meta name="description" content="德州扑克 Unity 客户端和 C++ 服务端部署、依赖、安全、数据库、移动平台和上线验收清单。">
+  <link rel="canonical" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/deployment.html">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="主导航"><a class="brand" href="index.html">MasterAI Poker</a><div class="nav-links"><a href="features.html">功能</a><a href="architecture.html">架构</a><a href="deployment.html">部署</a><a href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">GitHub</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Deployment and Acceptance</p><h1>部署前先完成技术、安全与合规验收</h1><p>本页是项目评估清单，不是可直接执行的生产配置，也不代表任何地区的法律意见。</p></div></section>
+    <section class="band white"><div class="container content-grid">
+      <nav class="toc" aria-label="本页目录"><strong>本页内容</strong><a href="#inventory">资产清单</a><a href="#build">构建</a><a href="#security">安全</a><a href="#acceptance">验收</a></nav>
+      <div class="prose">
+        <section id="inventory"><h2>1. 确认交付资产</h2><ul><li>核对 Unity 版本、C# 脚本、移动平台 SDK 和全部资源授权。</li><li>核对 C++ 编译器、操作系统、第三方库和服务端配置。</li><li>核对 MySQL 表结构、迁移脚本、Redis 数据结构与初始化流程。</li><li>确认管理后台、接口文档、监控、日志和备份工具是否包含在授权范围。</li></ul></section>
+        <section id="build"><h2>2. 建立可重复构建</h2><ul><li>在隔离的测试环境中构建服务端和 Unity 客户端。</li><li>将密码、证书、签名和第三方密钥放入安全的密钥管理系统。</li><li>记录版本、依赖、构建参数、数据库迁移和回滚步骤。</li><li>使用测试数据完成登录、牌桌、断线重连、结算、MTT 和 SNG 流程。</li></ul></section>
+        <section id="security"><h2>3. 安全和数据保护</h2><ul><li>审计身份认证、权限、协议重放、输入校验和服务端权威状态。</li><li>检查数据库注入、越权访问、日志敏感信息和后台管理接口。</li><li>执行依赖扫描、静态分析、渗透测试和容量压测。</li><li>制定数据最小化、加密、保留、删除、备份和事故响应政策。</li></ul><div class="notice">不要使用公开仓库中的示例配置直接上线，也不要把真实用户数据或生产密钥提交到 GitHub。</div></section>
+        <section id="acceptance"><h2>4. 商业与地区验收</h2><ul><li>审查当前 `LICENSE` 及书面商业授权范围。</li><li>确认游戏规则、虚拟物品、支付、年龄限制和广告政策。</li><li>确认 Apple App Store、Google Play 和目标市场的合规要求。</li><li>由有资质的法律、安全和财务人员审查最终上线方案。</li></ul><p><a class="button" href="mailto:masterai918@gmail.com">联系项目方</a></p></section>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container">MasterAI · <a href="index.html">项目主页</a> · <a href="https://github.com/masterai-top">GitHub Profile</a></div></footer>
+</body>
+</html>

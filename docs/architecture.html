@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>德州扑克系统架构 | Unity、C++、MySQL 与 Redis</title>
+  <meta name="description" content="MasterAI 德州扑克完整解决方案技术架构：Unity C# 移动客户端、C++ 实时游戏服务端、MySQL、Redis 和运营模块。">
+  <link rel="canonical" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/architecture.html">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="主导航"><a class="brand" href="index.html">MasterAI Poker</a><div class="nav-links"><a href="features.html">功能</a><a href="architecture.html">架构</a><a href="deployment.html">部署</a><a href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">GitHub</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Real-Time Game Architecture</p><h1>Unity 客户端与 C++ 游戏服务端架构</h1><p>基于仓库公开结构整理的组件边界和部署关注点，不替代实际源代码审计。</p></div></section>
+    <section class="band white"><div class="container content-grid">
+      <nav class="toc" aria-label="本页目录"><strong>本页内容</strong><a href="#client">客户端</a><a href="#server">服务端</a><a href="#data">数据层</a><a href="#flow">请求链路</a></nav>
+      <div class="prose">
+        <section id="client"><h2>Unity 移动客户端</h2><p>Unity 与 C# 负责牌桌、俱乐部、赛事、个人中心和互动界面。仓库还包含 Android SDK、iOS Workspace、资源依赖配置和编辑器工具目录。</p></section>
+        <section id="server"><h2>C++ 实时游戏服务</h2><p>根目录中的 C++ 模块覆盖游戏开始与结束、房间消息、客户端消息、下注、弃牌、全下、自动操作、计时和数据库访问等职责。</p><table><thead><tr><th>职责</th><th>代表性模块</th></tr></thead><tbody><tr><td>游戏生命周期</td><td><code>gamebegin</code>、<code>gameend</code>、<code>gameroot</code></td></tr><tr><td>实时消息</td><td><code>onclientmessage</code>、<code>onroommessage</code>、<code>sendroommessage</code></td></tr><tr><td>玩家动作</td><td><code>allin</code>、<code>autobet</code>、<code>autofold</code></td></tr><tr><td>数据访问</td><td><code>DBOperator</code>、订单和服务配置模块</td></tr></tbody></table></section>
+        <section id="data"><h2>MySQL 与 Redis</h2><p>项目说明将 MySQL 用于持久化存储，将 Redis 用于缓存和会话管理。上线前应确认表结构、索引、连接池、主从策略、缓存失效、备份恢复和数据保留政策。</p></section>
+        <section id="flow"><h2>典型请求链路</h2><ol><li>Unity 客户端建立认证和实时通信连接。</li><li>C++ 服务端校验玩家、房间和牌局状态。</li><li>状态机处理玩家动作并向牌桌参与者广播结果。</li><li>MySQL 保存需要持久化的数据，Redis 维护缓存与短期状态。</li><li>运营服务读取经过授权的数据用于用户、订单和排行榜工作流。</li></ol><div class="notice">公开仓库结构不能证明生产环境的完整安全性或并发能力。部署前必须完成代码、协议、依赖和基础设施验收。</div><p><a class="button" href="deployment.html">继续查看部署清单</a></p></section>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container">MasterAI · <a href="index.html">项目主页</a> · <a href="https://github.com/masterai-top">GitHub Profile</a></div></footer>
+</body>
+</html>

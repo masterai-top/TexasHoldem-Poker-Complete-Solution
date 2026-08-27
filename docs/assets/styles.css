@@ -1,0 +1,409 @@
+:root {
+  --ink: #151815;
+  --paper: #f6f4ee;
+  --white: #ffffff;
+  --felt: #0d563f;
+  --felt-dark: #07392b;
+  --gold: #d5ad45;
+  --coral: #c95845;
+  --muted: #636b65;
+  --line: #d8d9d2;
+  --max: 1160px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--felt);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(calc(100% - 32px), var(--max));
+  min-height: 64px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+.brand {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #e9eee9;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--gold);
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  min-height: clamp(520px, 72vh, 680px);
+  align-items: end;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--felt-dark);
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: rgba(4, 18, 13, 0.72);
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-inner {
+  position: relative;
+  width: min(calc(100% - 32px), var(--max));
+  margin: 0 auto;
+  padding: 72px 0 64px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 0.86rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 900px;
+  margin-bottom: 20px;
+  font-size: clamp(2.35rem, 6vw, 4.8rem);
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 0 0 28px;
+  color: #e8eee9;
+  font-size: 1.08rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.button.secondary {
+  border-color: rgba(255, 255, 255, 0.56);
+  background: transparent;
+  color: var(--white);
+}
+
+.band {
+  padding: 72px 0;
+}
+
+.band.white {
+  background: var(--white);
+}
+
+.band.dark {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.band.felt {
+  background: var(--felt);
+  color: var(--white);
+}
+
+.container {
+  width: min(calc(100% - 32px), var(--max));
+  margin: 0 auto;
+}
+
+.lead {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.dark .lead,
+.felt .lead {
+  color: #d7dfd9;
+}
+
+.metrics,
+.feature-grid,
+.architecture-grid,
+.gallery {
+  display: grid;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.metrics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.metric {
+  border-top: 3px solid var(--gold);
+  padding-top: 16px;
+}
+
+.metric strong {
+  display: block;
+  font-size: 1.55rem;
+}
+
+.metric span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature {
+  min-height: 180px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px;
+  background: var(--white);
+}
+
+.feature strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--coral);
+}
+
+.architecture-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.architecture-step {
+  border-left: 3px solid var(--gold);
+  padding: 8px 0 8px 18px;
+}
+
+.architecture-step p {
+  margin-bottom: 0;
+  color: #d7dfd9;
+}
+
+.gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.shot {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+}
+
+.shot img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.shot figcaption {
+  padding: 14px 16px;
+  font-weight: 700;
+}
+
+.page-hero {
+  padding: 84px 0 60px;
+  background: var(--felt-dark);
+  color: var(--white);
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  margin-bottom: 16px;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+}
+
+.page-hero p {
+  max-width: 780px;
+  color: #dce7df;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 48px;
+}
+
+.toc {
+  align-self: start;
+  border-left: 2px solid var(--gold);
+  padding-left: 16px;
+}
+
+.toc a {
+  display: block;
+  margin: 8px 0;
+  text-decoration: none;
+}
+
+.prose section + section {
+  margin-top: 48px;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--line);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.notice {
+  border-left: 4px solid var(--coral);
+  padding: 16px 20px;
+  background: #fff4f0;
+}
+
+code {
+  overflow-wrap: anywhere;
+}
+
+.site-footer {
+  padding: 36px 0;
+  border-top: 1px solid #343a35;
+  background: var(--ink);
+  color: #cbd3cc;
+}
+
+.site-footer a {
+  color: var(--gold);
+}
+
+@media (max-width: 860px) {
+  .metrics,
+  .architecture-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-grid,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 14px 0;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero-inner {
+    padding-bottom: 48px;
+  }
+
+  .metrics,
+  .gallery,
+  .architecture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .band {
+    padding: 52px 0;
+  }
+}
