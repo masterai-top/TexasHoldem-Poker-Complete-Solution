@@ -81,7 +81,12 @@ markdown
 **个人中心界面 | Personal Center**
 
 ---
+## MasterAI 相关德州扑克项目
 
+- [MasterAI 项目主页](https://github.com/masterai-top)
+- [德州扑克赛事平台](https://github.com/masterai-top/Texas-Holdem-Poker-Tournament-Event-Platform)
+- [德州扑克俱乐部平台](https://github.com/masterai-top/Texas-Holdem-Poker-Club-Platform)
+- [CFR 德州扑克 AI](https://github.com/masterai-top/cfr-poker-ai-masterai)
 # 联系与咨询
 
 如需技术合作、授权使用或获取完整源码，请通过以下方式联系：
