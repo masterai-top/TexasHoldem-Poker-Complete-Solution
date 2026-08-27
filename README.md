@@ -85,7 +85,7 @@ markdown
 
 - [MasterAI 项目主页](https://github.com/masterai-top)
 - [德州扑克赛事平台](https://github.com/masterai-top/Texas-Holdem-Poker-Tournament-Event-Platform)
-- [德州扑克俱乐部平台](https://github.com/masterai-top/Texas-Holdem-Poker-Club-Platform)
+- [德州积分金币大厅](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Server-Club-Source-Code)
 - [CFR 德州扑克 AI](https://github.com/masterai-top/cfr-poker-ai-masterai)
 # 联系与咨询
 
