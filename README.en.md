@@ -95,7 +95,7 @@ The existing MTT, SNG, Unity, poker-club, and multiplayer-poker documents remain
 
 - [MasterAI Project Profile](https://github.com/masterai-top)
 - [Texas Hold'em Tournament Event Platform](https://github.com/masterai-top/Texas-Holdem-Poker-Tournament-Event-Platform)
-- [Texas Hold'em Game Server and Club Platform](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Server-Club-Source-Code)
+- [Texas Hold'em Game ](https://github.com/masterai-top/Texas-Hold-em-Points-Lobby)
 - [CFR Texas Hold'em Poker AI](https://github.com/masterai-top/cfr-poker-ai-masterai)
 
 ## License and Compliance
