@@ -95,7 +95,7 @@ docs/                     GitHub Pages 與技術文件
 
 - [MasterAI 專案主頁](https://github.com/masterai-top)
 - [德州撲克賽事平台](https://github.com/masterai-top/Texas-Holdem-Poker-Tournament-Event-Platform)
-- [德州撲克遊戲伺服器與俱樂部系統](https://github.com/masterai-top/Texas-Holdem-Poker-Game-Server-Club-Source-Code)
+- [德州撲克大厅](https://github.com/masterai-top/Texas-Hold-em-Points-Lobby)
 - [CFR 德州撲克 AI](https://github.com/masterai-top/cfr-poker-ai-masterai)
 
 ## 授權與合規
