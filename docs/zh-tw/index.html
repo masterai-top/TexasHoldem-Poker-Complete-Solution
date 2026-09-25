@@ -1,7 +1,180 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>德州撲克源碼（德州源碼）完整解決方案 | Unity 與 C++</title><meta name="description" content="德州撲克源碼（德州源碼）完整解決方案，包含 Unity 用戶端、C++ 多人遊戲伺服器、撲克俱樂部、私人房、MTT、SNG、MySQL 與 Redis。"><link rel="canonical" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-tw/"><link rel="alternate" hreflang="zh-Hans" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-cn/"><link rel="alternate" hreflang="zh-Hant" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-tw/"><link rel="alternate" hreflang="en" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/en/"><link rel="alternate" hreflang="x-default" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-cn/"><meta property="og:title" content="德州撲克源碼完整解決方案"><meta property="og:description" content="Unity 用戶端、C++ 遊戲伺服器、撲克俱樂部、私人房及 MTT/SNG 賽事模組。"><meta property="og:type" content="website"><meta property="og:locale" content="zh_TW"><meta property="og:url" content="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-tw/"><meta property="og:image" content="https://raw.githubusercontent.com/masterai-top/TexasHoldem-Poker-Complete-Solution/main/Screenshots/%E6%89%93%E7%89%8C%E6%88%BF%E9%97%B4.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="../assets/styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"德州撲克源碼完整解決方案","alternateName":["德州源碼","Texas Holdem Poker Source Code"],"description":"包含 Unity 用戶端與 C++ 多人遊戲伺服器的德州撲克源碼專案。","codeRepository":"https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution","programmingLanguage":["C++","C#","Java","Objective-C"],"runtimePlatform":["Unity","iOS","Android"],"inLanguage":"zh-Hant","author":{"@type":"Organization","name":"MasterAI","url":"https://github.com/masterai-top"}}</script></head><body>
-<header class="site-header"><nav class="nav" aria-label="主導覽"><a class="brand" href="../index.html">MasterAI Poker</a><div class="nav-links"><a href="#features">功能</a><a href="#architecture">架構</a><a href="#screens">截圖</a><a href="../zh-cn/index.html">简体</a><a href="../en/index.html">English</a><a href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">GitHub</a></div></nav></header><main><section class="hero"><img class="hero-media" src="../Screenshots/打牌房间.jpg" alt="德州撲克源碼多人即時牌桌介面"><div class="hero-inner"><p class="eyebrow">Unity 用戶端 · C++ 遊戲伺服器</p><h1>德州撲克源碼（德州源碼）完整解決方案</h1><p>面向多人即時撲克產品，涵蓋行動用戶端、遊戲伺服器、俱樂部、聯盟、私人房、MTT、SNG、資料層與營運模組。</p><div class="actions"><a class="button" href="#features">查看系統功能</a><a class="button secondary" href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">查看 GitHub 原始碼</a></div></div></section>
-<section class="band white"><div class="container"><p class="eyebrow">完整撲克平台</p><h2>從行動牌桌到多人即時遊戲服務</h2><p class="lead">專案使用 Unity 與 C# 建置 iOS、Android 用戶端，以 C++ 處理房間、牌局狀態、下注、結算與即時訊息，並透過 MySQL 與 Redis 管理持久資料、快取與工作階段。</p><div class="metrics"><div class="metric"><strong>10+</strong><span>專案資料所述玩法</span></div><div class="metric"><strong>2–6</strong><span>即時牌桌人數</span></div><div class="metric"><strong>MTT / SNG</strong><span>錦標賽模式</span></div><div class="metric"><strong>iOS / Android</strong><span>行動用戶端</span></div></div></div></section>
-<section class="band" id="features"><div class="container"><p class="eyebrow">產品範圍</p><h2>德州撲克系統核心功能</h2><div class="feature-grid"><article class="feature"><strong>撲克玩法</strong><h3>德州、奧馬哈與短牌</h3><p>涵蓋下注、牌局狀態、結算與多種撲克玩法流程。</p></article><article class="feature"><strong>俱樂部系統</strong><h3>聯盟、私人房與好友局</h3><p>包含俱樂部管理、邀請、聯盟關係與俱樂部幣模組。</p></article><article class="feature"><strong>賽事系統</strong><h3>MTT 與 SNG</h3><p>支援賽事報名、牌桌管理、多桌錦標賽與排名流程。</p></article><article class="feature"><strong>Unity 用戶端</strong><h3>iOS 與 Android</h3><p>包含行動介面、互動資源、平台 SDK 與編輯器工具。</p></article><article class="feature"><strong>C++ 伺服器</strong><h3>即時房間與牌局狀態</h3><p>處理玩家連線、房間訊息、下注指令與遊戲生命週期。</p></article><article class="feature"><strong>資料與營運</strong><h3>MySQL、Redis 與管理模組</h3><p>支援持久化、快取、工作階段、排行、訂單與營運流程。</p></article></div></div></section>
-<section class="band dark" id="architecture"><div class="container"><p class="eyebrow">技術架構</p><h2>多人德州撲克遊戲鏈路</h2><p class="lead">從 Unity 行動用戶端到 C++ 遊戲服務，再連接 MySQL、Redis 與營運管理模組。部署前應依實際程式碼、並行目標與相依項目完成獨立驗收。</p><div class="architecture-grid"><div class="architecture-step"><h3>Unity 用戶端</h3><p>牌桌、俱樂部與賽事互動。</p></div><div class="architecture-step"><h3>C++ 伺服器</h3><p>房間、狀態機、下注與結算。</p></div><div class="architecture-step"><h3>MySQL / Redis</h3><p>資料、快取與工作階段。</p></div><div class="architecture-step"><h3>營運管理</h3><p>使用者、訂單、商城與排行。</p></div></div></div></section>
-<section class="band white" id="screens"><div class="container"><p class="eyebrow">實際產品介面</p><h2>德州撲克源碼功能截圖</h2><div class="gallery"><figure class="shot"><img loading="lazy" src="../Screenshots/创建俱乐部.jpg" alt="德州撲克俱樂部源碼建立俱樂部介面"><figcaption>建立撲克俱樂部</figcaption></figure><figure class="shot"><img loading="lazy" src="../Screenshots/MTT赛事.jpg" alt="德州撲克 MTT 多桌錦標賽系統介面"><figcaption>MTT 多桌錦標賽</figcaption></figure><figure class="shot"><img loading="lazy" src="../Screenshots/好友局.jpg" alt="德州撲克好友局與私人房源碼介面"><figcaption>好友局與私人房</figcaption></figure><figure class="shot"><img loading="lazy" src="../Screenshots/个人中心.jpg" alt="德州撲克玩家個人中心介面"><figcaption>玩家個人中心</figcaption></figure></div></div></section>
-<section class="band felt"><div class="container"><h2>程式碼、文件與部署範圍</h2><p class="lead">查看儲存庫中的程式碼結構、產品文件與實際截圖。公開內容用於研究、展示與技術評估；商業部署前請審查授權、安全、相依項目與地區法規。</p><div class="actions"><a class="button" href="../deployment.html">部署與驗收</a><a class="button secondary" href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution/blob/main/README.zh-TW.md">繁體中文 README</a></div></div></section></main><footer class="site-footer"><div class="container">MasterAI · <a href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">GitHub Repository</a> · <a href="../zh-cn/index.html">简体中文</a> · <a href="../en/index.html">English</a></div></footer></body></html>
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>德州撲克源碼（德州源碼）完整解決方案 | Unity 與 C++</title>
+<meta name="description" content="德州撲克源碼（德州源碼）完整解決方案，包含 Unity 用戶端、C++ 多人遊戲伺服器、撲克俱樂部、私人房、MTT、SNG、MySQL 與 Redis。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-tw/">
+<link rel="alternate" hreflang="zh-CN" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-cn/">
+<link rel="alternate" hreflang="zh-TW" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/en/">
+<link rel="alternate" hreflang="x-default" href="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/">
+<meta property="og:title" content="德州撲克源碼完整解決方案">
+<meta property="og:description" content="Unity 用戶端、C++ 遊戲伺服器、撲克俱樂部、私人房及 MTT/SNG 賽事模組。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/zh-tw/">
+<meta property="og:image" content="https://masterai-top.github.io/TexasHoldem-Poker-Complete-Solution/Screenshots/%E6%89%93%E7%89%8C%E6%88%BF%E9%97%B4.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"德州撲克源碼完整解決方案","alternateName":["德州源碼","Texas Holdem Poker Source Code"],"description":"包含 Unity 用戶端與 C++ 多人遊戲伺服器的德州撲克源碼專案。","codeRepository":"https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution","programmingLanguage":["C++","C#","Java","Objective-C"],"runtimePlatform":["Unity","iOS","Android"],"inLanguage":"zh-TW","author":{"@type":"Organization","name":"MasterAI","url":"https://github.com/masterai-top"}}</script>
+</head>
+<body>
+<header class="site-header">
+<nav class="nav" aria-label="主導覽">
+<a class="brand" href="../index.html">MasterAI Poker</a>
+<div class="nav-links">
+<a href="#features">功能</a>
+<a href="#architecture">架構</a>
+<a href="#screens">截圖</a>
+<a href="../zh-cn/index.html">简体</a>
+<a href="../en/index.html">English</a>
+<a href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">GitHub</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="hero">
+<img class="hero-media" src="../Screenshots/打牌房间.jpg" alt="德州撲克源碼多人即時牌桌介面">
+<div class="hero-inner">
+<p class="eyebrow">Unity 用戶端 · C++ 遊戲伺服器</p>
+<h1>德州撲克源碼（德州源碼）完整解決方案</h1>
+<p>面向多人即時撲克產品，涵蓋行動用戶端、遊戲伺服器、俱樂部、聯盟、私人房、MTT、SNG、資料層與營運模組。</p>
+<div class="actions">
+<a class="button" href="#features">查看系統功能</a>
+<a class="button secondary" href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">查看 GitHub 原始碼</a>
+</div>
+</div>
+</section>
+<section class="band white">
+<div class="container">
+<p class="eyebrow">完整撲克平台</p>
+<h2>從行動牌桌到多人即時遊戲服務</h2>
+<p class="lead">專案使用 Unity 與 C# 建置 iOS、Android 用戶端，以 C++ 處理房間、牌局狀態、下注、結算與即時訊息，並透過 MySQL 與 Redis 管理持久資料、快取與工作階段。</p>
+<div class="metrics">
+<div class="metric">
+<strong>10+</strong>
+<span>專案資料所述玩法</span>
+</div>
+<div class="metric">
+<strong>2–6</strong>
+<span>即時牌桌人數</span>
+</div>
+<div class="metric">
+<strong>MTT / SNG</strong>
+<span>錦標賽模式</span>
+</div>
+<div class="metric">
+<strong>iOS / Android</strong>
+<span>行動用戶端</span>
+</div>
+</div>
+</div>
+</section>
+<section class="band" id="features">
+<div class="container">
+<p class="eyebrow">產品範圍</p>
+<h2>德州撲克系統核心功能</h2>
+<div class="feature-grid">
+<article class="feature">
+<strong>撲克玩法</strong>
+<h3>德州、奧馬哈與短牌</h3>
+<p>涵蓋下注、牌局狀態、結算與多種撲克玩法流程。</p>
+</article>
+<article class="feature">
+<strong>俱樂部系統</strong>
+<h3>聯盟、私人房與好友局</h3>
+<p>包含俱樂部管理、邀請、聯盟關係與俱樂部幣模組。</p>
+</article>
+<article class="feature">
+<strong>賽事系統</strong>
+<h3>MTT 與 SNG</h3>
+<p>支援賽事報名、牌桌管理、多桌錦標賽與排名流程。</p>
+</article>
+<article class="feature">
+<strong>Unity 用戶端</strong>
+<h3>iOS 與 Android</h3>
+<p>包含行動介面、互動資源、平台 SDK 與編輯器工具。</p>
+</article>
+<article class="feature">
+<strong>C++ 伺服器</strong>
+<h3>即時房間與牌局狀態</h3>
+<p>處理玩家連線、房間訊息、下注指令與遊戲生命週期。</p>
+</article>
+<article class="feature">
+<strong>資料與營運</strong>
+<h3>MySQL、Redis 與管理模組</h3>
+<p>支援持久化、快取、工作階段、排行、訂單與營運流程。</p>
+</article>
+</div>
+</div>
+</section>
+<section class="band dark" id="architecture">
+<div class="container">
+<p class="eyebrow">技術架構</p>
+<h2>多人德州撲克遊戲鏈路</h2>
+<p class="lead">從 Unity 行動用戶端到 C++ 遊戲服務，再連接 MySQL、Redis 與營運管理模組。部署前應依實際程式碼、並行目標與相依項目完成獨立驗收。</p>
+<div class="architecture-grid">
+<div class="architecture-step">
+<h3>Unity 用戶端</h3>
+<p>牌桌、俱樂部與賽事互動。</p>
+</div>
+<div class="architecture-step">
+<h3>C++ 伺服器</h3>
+<p>房間、狀態機、下注與結算。</p>
+</div>
+<div class="architecture-step">
+<h3>MySQL / Redis</h3>
+<p>資料、快取與工作階段。</p>
+</div>
+<div class="architecture-step">
+<h3>營運管理</h3>
+<p>使用者、訂單、商城與排行。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="band white" id="screens">
+<div class="container">
+<p class="eyebrow">實際產品介面</p>
+<h2>德州撲克源碼功能截圖</h2>
+<div class="gallery">
+<figure class="shot">
+<img loading="lazy" src="../Screenshots/创建俱乐部.jpg" alt="德州撲克俱樂部源碼建立俱樂部介面">
+<figcaption>建立撲克俱樂部</figcaption>
+</figure>
+<figure class="shot">
+<img loading="lazy" src="../Screenshots/MTT赛事.jpg" alt="德州撲克 MTT 多桌錦標賽系統介面">
+<figcaption>MTT 多桌錦標賽</figcaption>
+</figure>
+<figure class="shot">
+<img loading="lazy" src="../Screenshots/好友局.jpg" alt="德州撲克好友局與私人房源碼介面">
+<figcaption>好友局與私人房</figcaption>
+</figure>
+<figure class="shot">
+<img loading="lazy" src="../Screenshots/个人中心.jpg" alt="德州撲克玩家個人中心介面">
+<figcaption>玩家個人中心</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="band felt">
+<div class="container">
+<h2>程式碼、文件與部署範圍</h2>
+<p class="lead">查看儲存庫中的程式碼結構、產品文件與實際截圖。公開內容用於研究、展示與技術評估；商業部署前請審查授權、安全、相依項目與地區法規。</p>
+<div class="actions">
+<a class="button" href="../deployment.html">部署與驗收</a>
+<a class="button secondary" href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution/blob/main/README.zh-TW.md">繁體中文 README</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">MasterAI · <a href="https://github.com/masterai-top/TexasHoldem-Poker-Complete-Solution">GitHub Repository</a> · <a href="../zh-cn/index.html">简体中文</a> · <a href="../en/index.html">English</a>
+</div>
+</footer>
+</body>
+</html>
+
