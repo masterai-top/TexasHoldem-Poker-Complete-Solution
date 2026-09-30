@@ -130,7 +130,6 @@ The existing MTT, SNG, Unity, poker-club, and multiplayer-poker documents remain
 Read [LICENSE](LICENSE) before using this repository. The current license includes learning, research, and demonstration terms plus a separate commercial-license requirement; it is not the unrestricted standard MIT License. Commercial deployment, payments, privacy, protection of minors, game rules, and regional regulatory requirements must be reviewed independently by the user.
 
 
-Do not commit production passwords, keys, certificates, real user data, or payment configuration to a public repository. Report vulnerabilities privately according to [SECURITY.md](SECURITY.md).
 
 
 ## Contact
